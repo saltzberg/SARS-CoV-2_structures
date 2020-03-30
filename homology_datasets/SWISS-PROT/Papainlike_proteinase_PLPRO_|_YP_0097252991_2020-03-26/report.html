@@ -1,0 +1,2108 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Papain-like proteinase (PL-PRO) | YP_009725299.1 | Report</title>
+    <meta name="description" content="SWISS-MODEL modelling results for Papain-like proteinase (PL-PRO) | YP_009725299.1." />
+    <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css"/>
+    <style>
+			.sequence { font-size: 12px; font-family:"Courier New", Courier, monospace;}
+			h2 {font-size: 1.2em; font-family:Arial; margin:20 0 0 0}
+			h3 {font-size: 1.0em; font-family:Arial; margin:0 0 0 0}
+			
+			.borderedTbl>tbody>tr>td, .borderedTbl th{ 
+        text-align:center;
+  			border-top:1px solid #DDD;
+  			border-left:1px solid #DDD;
+      }
+      .borderedTbl{
+        border-bottom:1px solid #DDD;
+        border-right:1px solid #DDD; 
+      }
+      td { 
+        -webkit-hyphens: auto;
+           -moz-hyphens: auto;
+                hyphens: auto; 
+              }
+
+			body {
+			width:100%; 
+			height:100%; 
+			background-color: #E7E8EA;
+			margin: 0;
+			padding: 0;
+			word-wrap: break-word;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+
+			}
+			#content{
+			padding:20px;
+			width:780px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color:#FFF;}
+			
+			#sib_footer {
+			background-color: #333333;
+			color: #F7F8FA;
+			font-family: Verdana;
+			font-size: 10px;
+			font-weight: normal;
+			height: 20px;
+			letter-spacing: 1px;
+			
+			width:760px;
+      margin-left:auto;
+      margin-right:auto;
+      padding:0px 20px 0px 20px
+			}
+			
+			#sib_footer a {
+  			color: #FFFFFF;
+  			font-family: Verdana;
+  			font-size: 10px;
+  			font-weight: normal;
+  			letter-spacing: 1px;
+			}
+			a, a:link, a:visited {
+			color: #D6161D;
+			text-decoration: none;
+			} 	
+
+			.alTbl{ font-family:'Courier New', Courier, monospace; }
+	   img{ border:0; }
+			
+	@media print{
+	
+	#content{
+			padding:20px;
+			background-color:#FFF;
+		}
+	body{ 
+	    width:100%;
+	    height:100%; 
+	    background-color: #FFF;
+			padding: 0;
+		}	
+	#sib_footer{
+		display:none;
+	}
+	}
+      
+    </style>
+  </head>
+  <body>
+  
+  <div id="content">
+  	<table border=0 width="100%">
+  		<tr>
+    		<td valign="middle">
+  			<a title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss">
+  			<img src="images/sib_ExPASy_logo_small.png"></a>
+  		</td>
+  		<td valign="middle">
+  			<a title="Biozentrum, University of Basel" href="https://www.biozentrum.unibas.ch">
+  			<img src="images/biozentrum_en.png"></a>
+  		</td>
+		  <td valign="middle"><div style="font-size:1.9em;">SWISS-MODEL Homology Modelling Report</div> </td>
+	 </tr>
+	</table> 
+    
+  <div style="clear:both"></div>
+
+
+ 
+  <h2>Model Building Report</h2>
+  <p>
+This document lists the results for the homology modelling project &quot;Papain-like proteinase (PL-PRO) | YP_009725299.1&quot; submitted to SWISS-MODEL workspace
+on March 26, 2020, 11:47 a.m..The submitted primary amino acid sequence is given in Table T1.</p>
+<p>If you use any results in your research, please cite the relevant publications:</p>
+<ul>
+  <li>Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R.,
+      Heer, F.T., de Beer, T.A.P., Rempfer, C., Bordoli, L., Lepore, R., Schwede, T.   
+      SWISS-MODEL: homology modelling of protein structures and complexes.
+      Nucleic Acids Res. 46(W1), W296-W303 (2018).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/29788355"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1093/nar/gky427"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+      <li><a name="promodII"></a>Guex, N., Peitsch, M.C., Schwede, T. Automated
+          comparative protein structure modeling with SWISS-MODEL and
+          Swiss-PdbViewer: A historical perspective. Electrophoresis 30,
+          S162-S173 (2009).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/19517507"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1002/elps.200900140"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+  <li>Bienert, S., Waterhouse, A., de Beer, T.A.P., Tauriello, G., Studer,
+    G., Bordoli, L., Schwede, T. The SWISS-MODEL Repository - new features and
+    functionality. Nucleic Acids Res. 45, D313-D319 (2017).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/27899672"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1093/nar/gkw1132"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+      <li><a name="qmean"></a>Benkert, P., Biasini, M., Schwede, T. Toward the
+        estimation of the absolute quality of individual protein structure
+        models. Bioinformatics 27,
+        343-350 (2011).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/21134891"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1093/bioinformatics/btq662"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+      <li><a name="qsqe"></a>Bertoni, M., Kiefer, F., Biasini, M., Bordoli, L.,
+        Schwede, T. Modeling protein quaternary structure of homo- and
+        hetero-oligomers beyond binary interactions by homology. Scientific
+        Reports 7 (2017).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/28874689"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1038/s41598-017-09654-8"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+</ul>
+
+<h2>Results</h2>
+<p>
+The SWISS-MODEL template library (SMTL version 2020-03-25, PDB release 2020-03-20) was searched with 
+BLAST (<a href="#blastp">Camacho et al.</a>) and HHBlits (<a href="#hhblits">Remmert et al.</a>) 
+
+ for evolutionary related structures matching the target sequence in Table T1. For details on the template search, see Materials and Methods. Overall 252 templates were found (Table T2).</p>
+
+
+<h2>Models</h2>
+
+
+<p>The following models were built (see Materials and Methods "Model Building"):</p>
+
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #01</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/01/01.png" target="_blank"><img height="60" src="model/01/01.png"></a>
+  </td>
+  	    <td><a href="model/01/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer </td>
+        <td>
+          <div style="max-width:350px;"> 1 x TTT: 5-AMINO-2-METHYL-N-[(1R)-1-NAPHTHALEN-1-YLETHYL]BENZAMIDE;<br> 1 x ZN: ZINC ION;
+          </div>
+        </td>
+        <td>0.11</td>
+        <td>-0.28</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl01"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-01" rel="lq-01" class="fancybox">
+              <div id="lq-chart-01-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-01" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-01" class="fancybox">
+              <div id="qn-chart-01-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-01" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/01/templates/3e9s.1.A.pdb.gz" target="_blank">3e9s.1.A</a>
+                
+              
+          </td>
+  				<td>82.86</td>
+  				<td>monomer</td>
+  				<td>0.00</td>
+  				<td>BLAST</td>
+  				<td>X-ray</td>
+  				<td>2.50&Aring;</td>
+  				<td>0.56</td>
+  				<td>746 - 1059
+
+        </td>
+  				<td>0.16</td>
+  				<td>Non-structural protein 3</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+    <br>
+    <h3>Included Ligands</h3>
+  	<table width="100%" class="borderedTbl">
+  		<thead>
+  			<tr>
+	  			<th>Ligand</th>
+	  			<th>Description</th>
+	  		</tr>
+	  	</thead>
+		<tbody>
+	  
+      <tr><td>1 x TTT</td>
+      <td><div style="max-width:650px;">5-AMINO-2-METHYL-N-[(1R)-1-NAPHTHALEN-1-YLETHYL]BENZAMIDE</div></td>
+      </tr>
+    
+      <tr><td>1 x ZN</td>
+      <td><div style="max-width:650px;">ZINC ION</div></td>
+      </tr>
+    
+    </tbody>
+    </table>
+
+  
+    <br>
+    <h3>Excluded ligands</h3>
+    <table width="100%" class="borderedTbl">
+      <thead>
+        <tr>
+          <th>Ligand Name.Number</th>
+          <th>Reason for Exclusion</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+    <tbody>
+    
+      
+      <tr><td>CL.3</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">CHLORIDE ION</div></td>
+      </tr>
+      
+      <tr><td>CL.4</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">CHLORIDE ION</div></td>
+      </tr>
+      
+    
+		</tbody>
+	</table>
+  
+
+<br>
+
+
+<pre>Target    APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLD<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    EWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEED<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    WLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTA<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    VVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREM<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    LAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLN<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    LEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYT<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    SNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTF<br>3e9s.1.A  -------------------------EVKTIKVFTTVDNTNLHTQLVDMSMTYGQQFGPTYLDGADVTKIKPHVNHEGKTF<br><br>Target    YVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDA<br>3e9s.1.A  FVLPSDDTLRSEAFEYYHTLDESFLGRYMSALNHTKKWKFPQVGGLTSIKWADNNCYLSSVLLALQQLEVKFNAPALQEA<br><br>Target    YYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQ<br>3e9s.1.A  YYRARAGDAANFCALILAYSNKTVGELGDVRETMTHLLQHANLESAKRVLNVVCKHCGQKTTTLTGVEAVMYMGTLSYDN<br><br>Target    FKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSE<br>3e9s.1.A  LKTGVSIPCVCGRDATQYLVQQESSFVMMSAPPAEYKLQQGTFLCANEYTGNYQCGHYTHITAKETLYRIDGAHLTKMSE<br><br>Target    YKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFA<br>3e9s.1.A  YKGPVTDVFYKETSYTTTIK------------------------------------------------------------<br><br>Target    DDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKP<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    VETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAA<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    YVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQ<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    LCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLG<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    MPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFF<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRA<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    TRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKN<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    GSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVS<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    DVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLS<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    HQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNL<br>3e9s.1.A  --------------------------------------------------------------------------------<br><br>Target    PFKLTCATTRQVVNVVTTKIALKGG<br>3e9s.1.A  -------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #02</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/02/02.png" target="_blank"><img height="60" src="model/02/02.png"></a>
+  </td>
+  	    <td><a href="model/02/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer (matching prediction)</td>
+        <td>
+          <div style="max-width:350px;">None
+          </div>
+        </td>
+        <td>0.07</td>
+        <td>-0.45</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl02"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-02" rel="lq-02" class="fancybox">
+              <div id="lq-chart-02-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-02" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-02" class="fancybox">
+              <div id="qn-chart-02-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-02" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/02/templates/2w2g.1.A.pdb.gz" target="_blank">2w2g.1.A</a>
+                
+              
+          </td>
+  				<td>75.00</td>
+  				<td>homo-dimer</td>
+  				<td>0.16</td>
+  				<td>HHblits</td>
+  				<td>X-ray</td>
+  				<td>2.22&Aring;</td>
+  				<td>0.53</td>
+  				<td>413 - 676
+
+        </td>
+  				<td>0.14</td>
+  				<td>NON-STRUCTURAL PROTEIN 3</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+
+  
+    <br>
+    <h3>Excluded ligands</h3>
+    <table width="100%" class="borderedTbl">
+      <thead>
+        <tr>
+          <th>Ligand Name.Number</th>
+          <th>Reason for Exclusion</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+    <tbody>
+    
+      
+      <tr><td>SO4.1</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">SULFATE ION</div></td>
+      </tr>
+      
+      <tr><td>SO4.2</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">SULFATE ION</div></td>
+      </tr>
+      
+    
+		</tbody>
+	</table>
+  
+
+<br>
+
+
+<pre>Target    APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLD<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    EWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEED<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    WLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTA<br>2w2g.1.A  ------------KIKACIDEVTTTLEETKFLTNKLLLFADINGKLYHDSQNMLRGEDMSFLEKDAPYMVGDVITSGDITC<br><br>Target    VVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREM<br>2w2g.1.A  VVIPSKKAGGTTEMLSRALKKVPVDEYITTYPGQGCAGYTLEEAKTALKKCKSAFYVLPSEAPNAKEEILGTVSWNLREM<br><br>Target    LAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLN<br>2w2g.1.A  LAHAEETRKLMPICMDVRAIMATIQRKYKGIKIQEGIVDYGVRFFFYTSKEPVASIITKLNSLNEPLVTMPIGYVTHGFN<br><br>Target    LEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYT<br>2w2g.1.A  LEEAARCMRSLRAPAVVSVSSPDAVTTYNGYLTSSS--------------------------------------------<br><br>Target    SNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTF<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDA<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    YYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQ<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    FKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSE<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    YKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFA<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    DDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKP<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    VETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAA<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    YVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQ<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    LCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLG<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    MPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFF<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRA<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    TRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKN<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    GSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVS<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    DVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLS<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    HQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNL<br>2w2g.1.A  --------------------------------------------------------------------------------<br><br>Target    PFKLTCATTRQVVNVVTTKIALKGG<br>2w2g.1.A  -------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #03</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/03/03.png" target="_blank"><img height="60" src="model/03/03.png"></a>
+  </td>
+  	    <td><a href="model/03/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer </td>
+        <td>
+          <div style="max-width:350px;"> 1 x NHE: 2-[N-CYCLOHEXYLAMINO]ETHANE SULFONIC ACID;
+          </div>
+        </td>
+        <td>0.05</td>
+        <td>-0.06</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl03"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-03" rel="lq-03" class="fancybox">
+              <div id="lq-chart-03-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-03" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-03" class="fancybox">
+              <div id="qn-chart-03-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-03" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/03/templates/6vxs.1.A.pdb.gz" target="_blank">6vxs.1.A</a>
+                
+              
+          </td>
+  				<td>100.00</td>
+  				<td>monomer</td>
+  				<td>0.00</td>
+  				<td>BLAST</td>
+  				<td>X-ray</td>
+  				<td>2.03&Aring;</td>
+  				<td>0.60</td>
+  				<td>207 - 373
+
+        </td>
+  				<td>0.09</td>
+  				<td>ADP-ribose-1&quot;-monophosphatase</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+    <br>
+    <h3>Included Ligands</h3>
+  	<table width="100%" class="borderedTbl">
+  		<thead>
+  			<tr>
+	  			<th>Ligand</th>
+	  			<th>Description</th>
+	  		</tr>
+	  	</thead>
+		<tbody>
+	  
+      <tr><td>1 x NHE</td>
+      <td><div style="max-width:650px;">2-[N-CYCLOHEXYLAMINO]ETHANE SULFONIC ACID</div></td>
+      </tr>
+    
+    </tbody>
+    </table>
+
+  
+    <br>
+    <h3>Excluded ligands</h3>
+    <table width="100%" class="borderedTbl">
+      <thead>
+        <tr>
+          <th>Ligand Name.Number</th>
+          <th>Reason for Exclusion</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+    <tbody>
+    
+      
+      <tr><td>SO4.1</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">SULFATE ION</div></td>
+      </tr>
+      
+      <tr><td>SO4.3</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">SULFATE ION</div></td>
+      </tr>
+      
+    
+		</tbody>
+	</table>
+  
+
+<br>
+
+
+<pre>Target    APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLD<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    EWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEED<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    WLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br>6vxs.1.A  ---------------------------------------------EVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br><br>Target    NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br>6vxs.1.A  NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br><br>Target    NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>6vxs.1.A  NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLE--------------------------<br><br>Target    KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTA<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    VVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREM<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    LAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLN<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    LEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYT<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    SNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTF<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDA<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    YYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQ<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    FKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSE<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    YKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFA<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    DDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKP<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    VETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAA<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    YVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQ<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    LCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLG<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    MPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFF<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRA<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    TRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKN<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    GSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVS<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    DVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLS<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    HQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNL<br>6vxs.1.A  --------------------------------------------------------------------------------<br><br>Target    PFKLTCATTRQVVNVVTTKIALKGG<br>6vxs.1.A  -------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #08</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/08/08.png" target="_blank"><img height="60" src="model/08/08.png"></a>
+  </td>
+  	    <td><a href="model/08/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer </td>
+        <td>
+          <div style="max-width:350px;">None
+          </div>
+        </td>
+        <td>0.04</td>
+        <td>-0.65</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl08"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-08" rel="lq-08" class="fancybox">
+              <div id="lq-chart-08-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-08" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-08" class="fancybox">
+              <div id="qn-chart-08-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-08" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/08/templates/2fav.2.A.pdb.gz" target="_blank">2fav.2.A</a>
+                
+              
+          </td>
+  				<td>71.68</td>
+  				<td>monomer</td>
+  				<td>0.00</td>
+  				<td>HHblits</td>
+  				<td>X-ray</td>
+  				<td>1.80&Aring;</td>
+  				<td>0.51</td>
+  				<td>206 - 376
+
+        </td>
+  				<td>0.09</td>
+  				<td>Replicase polyprotein 1ab (pp1ab) (ORF1AB)</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+
+  
+    <br>
+    <h3>Excluded ligands</h3>
+    <table width="100%" class="borderedTbl">
+      <thead>
+        <tr>
+          <th>Ligand Name.Number</th>
+          <th>Reason for Exclusion</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+    <tbody>
+    
+      
+      <tr><td>APR.1</td><td>
+      Binding site not conserved.
+      </td>
+      <td><div style="max-width:650px;">ADENOSINE-5-DIPHOSPHORIBOSE</div></td>
+      </tr>
+      
+    
+		</tbody>
+	</table>
+  
+
+<br>
+
+
+<pre>Target    APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLD<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    EWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEED<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    WLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br>2fav.2.A  --------------------------------------------EPVNQFTGYLKLTDNVAIKCVDIVKEAQSANPMVIV<br><br>Target    NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br>2fav.2.A  NAANIHLKHGGGVAGALNKATNGAMQKESDDYIKLNGPLTVGGSCLLSGHNLAKKCLHVVGPNLNAGEDIQLLKAAYENF<br><br>Target    NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>2fav.2.A  NSQDILLAPLLSAGIFGAKPLQSLQVCVQTVRTQVYIAVNDKALYEQVVMDYLDNLK-----------------------<br><br>Target    KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTA<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    VVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREM<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    LAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLN<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    LEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYT<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    SNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTF<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    YVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDA<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    YYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQ<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    FKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSE<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    YKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFA<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    DDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKP<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    VETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAA<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    YVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQ<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    LCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLG<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    MPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFF<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    YVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRA<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    TRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKN<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    GSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVS<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    DVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLS<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    HQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNL<br>2fav.2.A  --------------------------------------------------------------------------------<br><br>Target    PFKLTCATTRQVVNVVTTKIALKGG<br>2fav.2.A  -------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #04</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/04/04.png" target="_blank"><img height="60" src="model/04/04.png"></a>
+  </td>
+  	    <td><a href="model/04/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer </td>
+        <td>
+          <div style="max-width:350px;">None
+          </div>
+        </td>
+        <td>0.03</td>
+        <td>-0.74</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl04"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-04" rel="lq-04" class="fancybox">
+              <div id="lq-chart-04-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-04" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-04" class="fancybox">
+              <div id="qn-chart-04-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-04" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/04/templates/2k87.1.A.pdb.gz" target="_blank">2k87.1.A</a>
+                
+              
+          </td>
+  				<td>81.74</td>
+  				<td>monomer</td>
+  				<td>0.00</td>
+  				<td>BLAST</td>
+  				<td>NMR</td>
+  				<td>-</td>
+  				<td>0.58</td>
+  				<td>1089 - 1203
+
+        </td>
+  				<td>0.06</td>
+  				<td>Non-structural protein 3 of Replicase polyprotein 1a</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+    <br>
+    <h3>The template contained no ligands.</h3>
+    
+
+    
+
+  
+
+<br>
+
+
+<pre>Target    APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLD<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    EWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEED<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    WLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTA<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    VVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREM<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    LAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLN<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    LEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYT<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    SNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTF<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDA<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    YYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQ<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    FKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSE<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    YKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFA<br>2k87.1.A  ------------------------------------------------YTEQPIDLVPTQPLPNASFDNFKLTCSNTKFA<br><br>Target    DDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKP<br>2k87.1.A  DDLNQMTGFTKPASRELSVTFFPDLNGDVVAIDYRHYSASFKKGAKLLHKPIVWHINQATTKTTFKPNTWCLRCLWSTKP<br><br>Target    VETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAA<br>2k87.1.A  VDT-----------------------------------------------------------------------------<br><br>Target    YVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQ<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    LCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLG<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    MPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFF<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRA<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    TRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKN<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    GSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVS<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    DVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLS<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    HQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNL<br>2k87.1.A  --------------------------------------------------------------------------------<br><br>Target    PFKLTCATTRQVVNVVTTKIALKGG<br>2k87.1.A  -------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #06</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/06/06.png" target="_blank"><img height="60" src="model/06/06.png"></a>
+  </td>
+  	    <td><a href="model/06/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer </td>
+        <td>
+          <div style="max-width:350px;">None
+          </div>
+        </td>
+        <td>0.03</td>
+        <td>-2.12</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl06"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-06" rel="lq-06" class="fancybox">
+              <div id="lq-chart-06-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-06" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-06" class="fancybox">
+              <div id="qn-chart-06-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-06" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/06/templates/2rnk.1.A.pdb.gz" target="_blank">2rnk.1.A</a>
+                
+              
+          </td>
+  				<td>77.46</td>
+  				<td>monomer</td>
+  				<td>0.00</td>
+  				<td>HHblits</td>
+  				<td>NMR</td>
+  				<td>-</td>
+  				<td>0.53</td>
+  				<td>534 - 675
+
+        </td>
+  				<td>0.07</td>
+  				<td>Replicase polyprotein 1ab</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+    <br>
+    <h3>The template contained no ligands.</h3>
+    
+
+    
+
+  
+
+<br>
+
+
+<pre>Target    APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLD<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    EWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEED<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    WLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTA<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    VVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREM<br>2rnk.1.A  -----------------------------------------------------SHMVLPSEAPNAKEEILGTVSWNLREM<br><br>Target    LAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLN<br>2rnk.1.A  LAHAEETRKLMPICMDVRAIMATIQRKYKGIKIQEGIVDYGVRFFFYTSKEPVASIITKLNSLNEPLVTMPIGYVTHGFN<br><br>Target    LEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYT<br>2rnk.1.A  LEEAARCMRSLKAPAVVSVSSPDAVTTYNGYLTSS---------------------------------------------<br><br>Target    SNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTF<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDA<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    YYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQ<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    FKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSE<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    YKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFA<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    DDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKP<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    VETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAA<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    YVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQ<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    LCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLG<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    MPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFF<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    YVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRA<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    TRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKN<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    GSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVS<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    DVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLS<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    HQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNL<br>2rnk.1.A  --------------------------------------------------------------------------------<br><br>Target    PFKLTCATTRQVVNVVTTKIALKGG<br>2rnk.1.A  -------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #05</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/05/05.png" target="_blank"><img height="60" src="model/05/05.png"></a>
+  </td>
+  	    <td><a href="model/05/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer </td>
+        <td>
+          <div style="max-width:350px;">None
+          </div>
+        </td>
+        <td>0.03</td>
+        <td>-5.21</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl05"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-05" rel="lq-05" class="fancybox">
+              <div id="lq-chart-05-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-05" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-05" class="fancybox">
+              <div id="qn-chart-05-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-05" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/05/templates/2idy.1.A.pdb.gz" target="_blank">2idy.1.A</a>
+                
+              
+          </td>
+  				<td>78.50</td>
+  				<td>monomer</td>
+  				<td>0.00</td>
+  				<td>BLAST</td>
+  				<td>NMR</td>
+  				<td>-</td>
+  				<td>0.54</td>
+  				<td>1 - 107
+
+        </td>
+  				<td>0.06</td>
+  				<td>NSP3</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+    <br>
+    <h3>The template contained no ligands.</h3>
+    
+
+    
+
+  
+
+<br>
+
+
+<pre>Target    APTK-VTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDL<br>2idy.1.A  APIKGVTFGEDTVWEVQGYKNVRITFELDERVDKVLNEKCSVYTVESGTEVTEFACVVAEAVVKTLQPVSDLLTNMGIDL<br><br>Target    DEWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEE<br>2idy.1.A  DEWSVATFYLFDDAGEENFSSRMYCSFY----------------------------------------------------<br><br>Target    DWLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVV<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    VNAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYEN<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    FNQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITE<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    SKPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLT<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    AVVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLRE<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    MLAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGL<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    NLEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYY<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    TSNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKT<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    FYVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQD<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    AYYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYE<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    QFKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSS<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    EYKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKF<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    ADDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTK<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    PVETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMA<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    AYVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLL<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    QLCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNL<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    GMPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRF<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    FYVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNR<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    ATRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVK<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    NGSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALV<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    SDVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKL<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    SHQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNN<br>2idy.1.A  --------------------------------------------------------------------------------<br><br>Target    LPFKLTCATTRQVVNVVTTKIALKGG<br>2idy.1.A  --------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #07</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/07/07.png" target="_blank"><img height="60" src="model/07/07.png"></a>
+  </td>
+  	    <td><a href="model/07/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>monomer </td>
+        <td>
+          <div style="max-width:350px;">None
+          </div>
+        </td>
+        <td>0.02</td>
+        <td>-0.66</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl07"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-07" rel="lq-07" class="fancybox">
+              <div id="lq-chart-07-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-07" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-07" class="fancybox">
+              <div id="qn-chart-07-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-07" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/07/templates/2kqw.1.A.pdb.gz" target="_blank">2kqw.1.A</a>
+                
+              
+          </td>
+  				<td>80.22</td>
+  				<td>monomer</td>
+  				<td>0.00</td>
+  				<td>BLAST</td>
+  				<td>NMR</td>
+  				<td>-</td>
+  				<td>0.55</td>
+  				<td>678 - 732
+
+        </td>
+  				<td>0.09</td>
+  				<td>Non-structural protein 3</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+    <br>
+    <h3>The template contained no ligands.</h3>
+    
+
+    
+
+  
+
+<br>
+
+
+<pre>Target    APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLD<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    EWSMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEED<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    WLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVV<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    NAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTA<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    VVIPTKKAGGTTEMLAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREM<br>2kqw.1.A  ----------------------------------------------------------------------GTVSWNLREM<br><br>Target    LAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLN<br>2kqw.1.A  LAHAEETRKLMPICMDVRAIMATIQRKYKGIKIQEGIVDYGVRFFFYTSKEPVASIITKLNSLNEPLVTMPIGYVTHGFN<br><br>Target    LEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYT<br>2kqw.1.A  LEEAARCMRSLKAPAVVSVSSPDAVTTYNGYLTSSSKTSEEHFVETVSLAGSYRDWSYSGQRTELGVEFLKRGDKIVYHT<br><br>Target    -SNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKT<br>2kqw.1.A  LESPVEFHLDGEV-------------------------------------------------------------------<br><br>Target    FYVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQD<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    AYYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYE<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    QFKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSS<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    EYKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKF<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    ADDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTK<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    PVETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMA<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    AYVDNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLL<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    QLCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNL<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    GMPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRF<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    FYVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNR<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    ATRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVK<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    NGSIHLYFDKAGQKTYERHSLSHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALV<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    SDVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKL<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    SHQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNN<br>2kqw.1.A  --------------------------------------------------------------------------------<br><br>Target    LPFKLTCATTRQVVNVVTTKIALKGG<br>2kqw.1.A  --------------------------<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+
+
+
+
+<h2>Materials and Methods</h2>
+
+
+
+<h2>Template Search</h2>
+<p>Template search with BLAST and HHBlits
+ has been performed against the SWISS-MODEL template library (SMTL, last update: 2020-03-25, last included PDB release: 2020-03-20).</p>
+
+<p>
+The target sequence was searched with BLAST against the primary amino acid sequence contained in the SMTL.
+
+
+A total of 78 templates were found.
+
+
+</p> 
+
+
+<p>
+An initial HHblits profile has been built using the procedure outlined in (Remmert et al.), followed by 1 iteration of HHblits against NR20. The obtained profile has then be searched against all profiles of the SMTL. A total of 215 templates were found.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Model Building</h2>
+<p>
+Models are built based on the target-template alignment using ProMod3. Coordinates which are conserved between the target and the template are copied from the template to the model. Insertions and deletions are remodelled using a fragment library. Side chains are then rebuilt. Finally, the geometry of the resulting model is regularized by using a force field. In case loop modelling with ProMod3 fails, an alternative model is built with PROMOD-II (<a href="#promodII">Guex et al.</a>).
+</p>
+
+<h2>Model Quality Estimation</h2>
+<p>
+The global and per-residue model quality has been assessed using the QMEAN scoring function (<a href="#qmean">Benkert et al.</a>) . For improved performance, weights of the individual QMEAN terms have been trained specifically for SWISS-MODEL. 
+</p>
+
+<h2>Ligand Modelling</h2>
+<p>
+Ligands present in the template structure are transferred by homology to the model when the following criteria are met: (a) The ligands are annotated as biologically relevant in the template library, (b) the ligand is in contact with the model, (c) the ligand is not clashing with the protein, (d) the residues in contact with the ligand are conserved between the target and the template. If any of these four criteria is not satisfied, a certain ligand will not be included in the model. The model summary includes information on why and which ligand has not been included.</p>
+
+<h2>Oligomeric State Conservation</h2>
+<p>
+The quaternary structure annotation of the template is used to model the target sequence in its oligomeric form. The method (<a href="#qsqe">Bertoni et al.</a>) is based on a supervised machine learning algorithm, Support Vector Machines (SVM), which combines interface conservation, structural clustering, and other template features to provide a quaternary structure quality estimate (QSQE). The QSQE score is a number between 0 and 1, reflecting the expected accuracy of the interchain contacts for a model built based a given alignment and template. Higher numbers indicate higher reliability. This complements the GMQE score which estimates the accuracy of the tertiary structure of the resulting model.</p>
+
+<h2>References</h2>
+<p>
+  <ul>
+    <li><a name="blastp"></a><b>BLAST</b><br>
+        Camacho, C., Coulouris, G., Avagyan, V., Ma, N., Papadopoulos, J.,
+        Bealer, K., Madden, T.L. BLAST+: architecture and applications. BMC
+        Bioinformatics 10, 421-430 (2009).
+        <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/20003500">
+          <img width="17" align="absmiddle" height="16"
+               src="images/pubmed.jpg
+                    "></a>
+        <a href="https://dx.doi.org/10.1186/1471-2105-10-421"
+           target="_blank"><img src="images/doi.jpg
+                                     " width="30"
+                                height="16" align="absmiddle"
+                                style="padding-left:2px"></a></li>
+    <li><a name="hhblits"></a><b>HHblits</b><br>
+        Remmert, M., Biegert, A., Hauser, A., S&ouml;ding, J. HHblits:
+        lightning-fast iterative protein sequence searching by HMM-HMM
+        alignment. Nat Methods 9, 173-175 (2012).
+        <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/22198341">
+          <img width="17" align="absmiddle" height="16"
+               src="images/pubmed.jpg
+                    "></a>
+        <a href="https://dx.doi.org/10.1038/nmeth.1818"
+           target="_blank"><img src="images/doi.jpg
+                                     " width="30"
+                                height="16" align="absmiddle"
+                                style="padding-left:2px"></a></li>
+  </ul>
+
+<h2>Table T1:</h2>
+<p>Primary amino acid sequence for which templates were searched and models were built.</p>
+<div class="sequence">APTKVTFGDDTVIEVQGYKSVNITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLDEWSMATYYLFDESGEFKLAS<br>HMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEEDWLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTP<br>VVQTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVVNAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVV<br>GPNVNKGEDIQLLKSAYENFNQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVEQKIAEIPKEEVKPFITES<br>KPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTAVVIPTKKAGGTTEMLAKALR<br>KVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREMLAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDY<br>GARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLNLEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEHFIETISLAGSYKDWSYSG<br>QSTQLGIEFLKRGDKSVYYTSNPTTFHLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTF<br>YVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDAYYRARAGEAANFCALILAYC<br>NKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQFKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKH<br>GTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSEYKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQ<br>PYPNASFDNFKFVCDNIKFADDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKP<br>VETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAAYVDNSSLTIKKPNELSRVLG<br>LKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQLCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYL<br>KSPNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLGMPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDL<br>TAFGLVAEWFLAYILFTRFFYVLGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYKRNRA<br>TRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKNGSIHLYFDKAGQKTYERHSL<br>SHFVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVSDVGDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEA<br>ELAKNVSLDNVLSTFISAARQGFVDSDVETKDVVECLKLSHQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVAKSHNIALIWNVKDF<br>MSLSEQLRKQIRSAAKKNNLPFKLTCATTRQVVNVVTTKIALKGG<br></div>
+
+
+<h2>Table T2:</h2>
+<table class="borderedTbl">
+<thead>
+	<tr>
+		<th>Template</th>
+		<th>Seq Identity</th>
+		<th>Oligo-state</th>
+		<th>QSQE</th>
+		<th>Found by</th>
+		<th>Method</th>
+		<th>Resolution</th>
+		<th>Seq Similarity</th>
+		<th>Coverage</th>
+		<th>Description</th>
+	</tr>
+</thead>
+<tbody>
+
+<tr>
+		<td>3e9s.1.A</td>
+		<td>82.86</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>2.50&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Non-structural protein 3</td>
+	</tr>
+<tr>
+		<td>5tl6.1.A</td>
+		<td>82.86</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>2.62&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>5tl7.1.B</td>
+		<td>82.86</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>2.44&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>5tl7.2.B</td>
+		<td>82.86</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>2.44&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>5tl6.2.A</td>
+		<td>82.86</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>2.62&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>4m0w.1.A</td>
+		<td>82.39</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.40&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Replicase polyprotein 1a</td>
+	</tr>
+<tr>
+		<td>5e6j.1.A</td>
+		<td>82.91</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.85&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>5e6j.2.A</td>
+		<td>82.91</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.85&Aring;</td>
+		<td>0.56</td>
+		<td>0.16</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>2w2g.1.A</td>
+		<td>75.00</td>
+		<td>homo-dimer</td>
+		<td>0.16</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.22&Aring;</td>
+		<td>0.53</td>
+		<td>0.14</td>
+		<td>NON-STRUCTURAL PROTEIN 3</td>
+	</tr>
+<tr>
+		<td>2w2g.1.B</td>
+		<td>75.00</td>
+		<td>homo-dimer</td>
+		<td>0.15</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.22&Aring;</td>
+		<td>0.53</td>
+		<td>0.14</td>
+		<td>NON-STRUCTURAL PROTEIN 3</td>
+	</tr>
+<tr>
+		<td>2wct.1.A</td>
+		<td>75.00</td>
+		<td>homo-dimer</td>
+		<td>0.15</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.79&Aring;</td>
+		<td>0.53</td>
+		<td>0.14</td>
+		<td>NON-STRUCTURAL PROTEIN 3</td>
+	</tr>
+<tr>
+		<td>6w6y.1.A</td>
+		<td>100.00</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>1.45&Aring;</td>
+		<td>0.60</td>
+		<td>0.09</td>
+		<td>ADP ribose phosphatase (ADRP)</td>
+	</tr>
+<tr>
+		<td>6vxs.1.A</td>
+		<td>100.00</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>2.03&Aring;</td>
+		<td>0.60</td>
+		<td>0.09</td>
+		<td>ADP-ribose-1&quot;-monophosphatase</td>
+	</tr>
+<tr>
+		<td>6w02.1.A</td>
+		<td>100.00</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>1.50&Aring;</td>
+		<td>0.60</td>
+		<td>0.09</td>
+		<td>ADP ribose phosphatase</td>
+	</tr>
+<tr>
+		<td>2acf.1.A</td>
+		<td>73.37</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>1.40&Aring;</td>
+		<td>0.52</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>2acf.2.A</td>
+		<td>73.37</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>X-ray</td>
+		<td>1.40&Aring;</td>
+		<td>0.52</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>2fav.1.A</td>
+		<td>71.68</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.80&Aring;</td>
+		<td>0.51</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab (pp1ab) (ORF1AB)</td>
+	</tr>
+<tr>
+		<td>2fav.3.A</td>
+		<td>71.68</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.80&Aring;</td>
+		<td>0.51</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab (pp1ab) (ORF1AB)</td>
+	</tr>
+<tr>
+		<td>2fav.2.A</td>
+		<td>71.68</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.80&Aring;</td>
+		<td>0.51</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab (pp1ab) (ORF1AB)</td>
+	</tr>
+<tr>
+		<td>2acf.4.A</td>
+		<td>71.68</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.40&Aring;</td>
+		<td>0.51</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>2acf.2.A</td>
+		<td>71.68</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.40&Aring;</td>
+		<td>0.51</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>6vxs.2.A</td>
+		<td>99.41</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.03&Aring;</td>
+		<td>0.60</td>
+		<td>0.09</td>
+		<td>ADP-ribose-1&quot;-monophosphatase</td>
+	</tr>
+<tr>
+		<td>6vxs.1.A</td>
+		<td>99.41</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.03&Aring;</td>
+		<td>0.60</td>
+		<td>0.09</td>
+		<td>ADP-ribose-1&quot;-monophosphatase</td>
+	</tr>
+<tr>
+		<td>2acf.1.A</td>
+		<td>71.68</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.40&Aring;</td>
+		<td>0.51</td>
+		<td>0.09</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>6w02.1.A</td>
+		<td>99.41</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.50&Aring;</td>
+		<td>0.60</td>
+		<td>0.09</td>
+		<td>ADP ribose phosphatase</td>
+	</tr>
+<tr>
+		<td>6w02.2.A</td>
+		<td>99.41</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.50&Aring;</td>
+		<td>0.60</td>
+		<td>0.09</td>
+		<td>ADP ribose phosphatase</td>
+	</tr>
+<tr>
+		<td>2kqv.1.A</td>
+		<td>80.22</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.55</td>
+		<td>0.09</td>
+		<td>Non-structural protein 3</td>
+	</tr>
+<tr>
+		<td>2k87.1.A</td>
+		<td>81.74</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.58</td>
+		<td>0.06</td>
+		<td>Non-structural protein 3 of Replicase polyprotein 1a</td>
+	</tr>
+<tr>
+		<td>4ess.1.A</td>
+		<td>25.00</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.00&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>OR187</td>
+	</tr>
+<tr>
+		<td>4etj.1.A</td>
+		<td>25.00</td>
+		<td>homo-dimer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.20&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>Serine hydrolase</td>
+	</tr>
+<tr>
+		<td>3v45.1.A</td>
+		<td>25.00</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.60&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>Serine hydrolase OSH55</td>
+	</tr>
+<tr>
+		<td>3iif.2.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.10&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>Core histone macro-H2A.1, Isoform 1</td>
+	</tr>
+<tr>
+		<td>3iif.1.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.10&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>Core histone macro-H2A.1, Isoform 1</td>
+	</tr>
+<tr>
+		<td>1yd9.1.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.60&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>Core histone macro-H2A.1</td>
+	</tr>
+<tr>
+		<td>2fxk.2.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.54&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>H2A histone family, member Y isoform 1</td>
+	</tr>
+<tr>
+		<td>1zr3.2.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.66&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>histone macroH2A1.1</td>
+	</tr>
+<tr>
+		<td>1zr3.1.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.66&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>histone macroH2A1.1</td>
+	</tr>
+<tr>
+		<td>1yd9.4.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.60&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>Core histone macro-H2A.1</td>
+	</tr>
+<tr>
+		<td>1yd9.3.A</td>
+		<td>23.72</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.60&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>Core histone macro-H2A.1</td>
+	</tr>
+<tr>
+		<td>2rnk.1.A</td>
+		<td>77.46</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.53</td>
+		<td>0.07</td>
+		<td>Replicase polyprotein 1ab</td>
+	</tr>
+<tr>
+		<td>4etk.1.A</td>
+		<td>25.00</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.70&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>De novo designed serine hydrolase</td>
+	</tr>
+<tr>
+		<td>4etk.2.A</td>
+		<td>25.00</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.70&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>De novo designed serine hydrolase</td>
+	</tr>
+<tr>
+		<td>4k0c.1.A</td>
+		<td>24.32</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>3.00&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>designed serine hydrolase</td>
+	</tr>
+<tr>
+		<td>4k0c.2.A</td>
+		<td>24.32</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>3.00&Aring;</td>
+		<td>0.32</td>
+		<td>0.08</td>
+		<td>designed serine hydrolase</td>
+	</tr>
+<tr>
+		<td>4gvv.1.A</td>
+		<td>24.32</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.89&Aring;</td>
+		<td>0.31</td>
+		<td>0.08</td>
+		<td>De novo design serine hydrolase</td>
+	</tr>
+<tr>
+		<td>2k87.1.A</td>
+		<td>81.03</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.58</td>
+		<td>0.06</td>
+		<td>Non-structural protein 3 of Replicase polyprotein 1a</td>
+	</tr>
+<tr>
+		<td>2kqv.1.A</td>
+		<td>78.76</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.54</td>
+		<td>0.10</td>
+		<td>Non-structural protein 3</td>
+	</tr>
+<tr>
+		<td>2kqw.1.A</td>
+		<td>80.22</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>BLAST</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.55</td>
+		<td>0.09</td>
+		<td>Non-structural protein 3</td>
+	</tr>
+<tr>
+		<td>2idy.1.A</td>
+		<td>78.38</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.54</td>
+		<td>0.06</td>
+		<td>NSP3</td>
+	</tr>
+<tr>
+		<td>2kqw.1.A</td>
+		<td>78.76</td>
+		<td>monomer</td>
+		<td>-</td>
+		<td>HHblits</td>
+		<td>NMR</td>
+		<td>NA</td>
+		<td>0.54</td>
+		<td>0.10</td>
+		<td>Non-structural protein 3</td>
+	</tr>
+</tbody>
+</table>
+
+
+<br>The table above shows the top 50 filtered templates. A further 150 templates were found which were considered to be less suitable for modelling than the filtered list.<br>
+5zda.1.A, 3eke.1.A, 3mp2.1.A, 2dx6.1.A, 5iq5.1.A, 4x2z.1.A, 5fud.1.A, 3gqo.3.A, 2eee.1.A, 3ejf.1.A, 4j4z.1.A, 3q6z.1.A, 2fe8.3.A, 1hjz.2.A, 3ew5.1.A, 1njr.1.A, 3mj5.1.A, 5wfi.2.A, 4abk.1.A, 4ovz.2.A, 3sih.1.A, 6fg3.1.A, 2fe8.2.A, 4j5s.1.A, 4fp9.1.H, 5iit.1.A, 5lw0.1.A, 5l9k.1.A, 5zdb.2.A, 5lcc.2.A, 5cb5.1.A, 4fp9.1.B, 5ko3.1.A, 1spv.1.A, 5lcc.1.A, 4kyb.1.A, 5m31.1.A, 5m3i.1.A, 4gvv.3.A, 3q71.1.A, 4gua.1.A, 6fx7.1.A, 1zr5.1.A, 6men.1.A, 3ew5.2.A, 5isn.1.A, 2kaf.1.A, 2acf.4.A, 4rez.1.A, 4jgk.3.A, 2rnk.1.A, 1txz.2.A, 2w2g.1.B, 5utv.1.A, 5bz0.1.A, 2fav.3.A, 5hih.1.A, 5tl7.2.B, 5tl6.1.A, 5kiv.1.A, 5m3e.1.A, 6noz.1.A, 4tu0.3.A, 5o2d.1.A, 4jca.2.A, 3e9s.1.A, 5ail.1.A, 5lnc.1.A, 4jvv.1.A, 4j5r.1.A, 1vhu.1.A, 4ovz.1.A, 5zdg.1.A, 4uml.1.A, 3v2b.1.A, 4ow0.1.A, 2x47.1.A, 2idy.1.A, 6fy5.1.A, 3ewo.1.A, 4kyb.2.A, 5tl6.2.A, 3gqo.4.A, 2vri.1.A, 4rna.1.A, 3gpo.1.A, 2afc.1.A, 2fg1.1.A, 5y3e.1.A, 5tl7.1.B, 2jze.1.A, 4mm3.1.B, 4jll.1.A, 3gqe.1.A, 4j5q.1.A, 4gvw.1.A, 3ewr.1.A, 5fsz.1.A, 5cms.1.A, 3gqe.2.A, 6mwm.1.A, 5cb3.1.A, 4rf0.1.A, 2w2g.1.A, 2lgr.1.A, 2fav.1.A, 5fsu.2.A, 4jgk.1.A, 6bi8.1.A, 5zdf.1.A, 5zub.1.A, 5lnc.2.A, 2fav.2.A, 2m0a.1.A, 5zdd.1.A, 4p16.1.A, 5lw6.1.A, 5mqx.1.A, 5zdb.1.A, 3ejg.1.A, 2wct.1.A, 5e3b.1.A, 2xd7.1.A, 5w8t.1.B, 3vfq.1.A, 3iid.1.A, 5lau.1.A, 5lbp.1.A, 2l8r.1.A, 5zdc.1.A, 4ypt.1.A, 5zde.1.A, 6t9i.1.J, 4pt5.1.A, 5dus.1.A, 2fe8.1.A, 5fsu.1.A, 4wur.1.A, 3sij.1.A, 3iif.3.A, 4r3d.1.A, 3eti.1.A, 5v69.1.A, 5wfi.1.A, 4gvv.2.A, 3jzt.1.A, 4iqy.1.A, 3ewo.1.B, 3gpq.4.A, 6fy5.2.A
+ 
+
+
+	</div>
+	
+  <div id="sib_footer">			
+   <div id="sib_footer_content"> 
+       <a href="https://www.sib.swiss">Swiss Institute of Bioinformatics</a>
+       <a href="mailto:help-swissmodel@unibas.ch" style="margin-left:16px;">Contact Us</a>
+      <div id="sib_footer_right" style="float:right"></div>
+  	</div>
+	</div>
+  
+  <script src="js/svgtocanvas.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script> 
+  <script src="js/qmean.min.js"></script>
+  <script src="js/raphael-min.js"></script>
+  <script>
+ var localQMEANNormImage='images/qmean_norm.png';
+ var modelData = {
+   
+      "01":{
+        'qmean_local' : { 
+        "A":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.4448519334,0.5103892976,0.5504784881,0.7017717758,0.7366588592,0.7775737975,0.8658789521,0.8325923614,0.8551413359,0.8300954865,0.8351635088,0.8030507542,0.7893907241,0.6016829613,0.6745519377,0.7185369125,0.7878621476,0.8165781701,0.7998838473,0.8194315662,0.8188772892,0.6946580261,0.6374507028,0.6599605691,0.605868633,0.7313063394,0.7140940242,0.839329516,0.6824507757,0.7684350556,0.8150572607,0.8769915556,0.8805267529,0.8633461456,0.8233589382,0.8353816111,0.7828009066,0.8117505104,0.8313198263,0.8213831106,0.8315234514,0.8084383328,0.6560216241,0.6534814688,0.6456450248,0.7888050659,0.6934691657,0.7345667479,0.7276792431,0.7856232315,0.7819329181,0.8604859234,0.8145795362,0.8637856372,0.8558671427,0.8283760904,0.8710200256,0.8258049468,0.8156491955,0.7756817513,0.7297450478,0.7105590285,0.756806555,0.7767485786,0.67581418,0.7848295973,0.7551543482,0.8804851184,0.7633152881,0.8012403432,0.7846199416,0.8419886769,0.8321647439,0.8656090588,0.8179141587,0.8414879123,0.8222525511,0.8764710078,0.8759718657,0.8643294545,0.8868311597,0.819085297,0.8774461114,0.8317693675,0.8741293592,0.9141232094,0.8871913178,0.8497817238,0.8509369357,0.9040123789,0.8441975081,0.8002190149,0.7799866452,0.8227394709,0.7841745003,0.811211655,0.7751768867,0.840465969,0.8284666698,0.8538522413,0.837377917,0.8613319847,0.8849681465,0.8453998107,0.7806645324,0.6775845021,0.8851533567,0.8134225183,0.8334409845,0.8803827201,0.8752799841,0.8365432195,0.9262134128,0.9510132185,0.9246420495,0.9654843792,0.9245684407,0.8988081524,0.9153907563,0.9004264065,0.8179857171,0.8051420266,0.8302017479,0.8049650802,0.866341857,0.8365654389,0.8685237576,0.8731825335,0.91515799,0.914135238,0.9201810221,0.8947233753,0.8350084886,0.8580744973,0.9197483394,0.8623368562,0.7634658343,0.7439856693,0.9113011743,0.7408451365,0.8300260611,0.8689430692,0.8266215457,0.9239616039,0.9246552317,0.9028227978,0.9163732843,0.9400710627,0.9584686734,0.9346250882,0.9221234052,0.9178148562,0.9492855747,0.8837601261,0.8938836654,0.8805500781,0.8520274947,0.8915838471,0.8923722608,0.8709923889,0.7714049698,0.7440018875,0.8510257584,0.8371649735,0.8947125119,0.8024436615,0.8454173866,0.8942841074,0.8597075361,0.8862598883,0.8614579408,0.8844818751,0.8640119885,0.8420320398,0.863567353,0.9098895697,0.8642879457,0.8660495386,0.8109341905,0.8110006334,0.8149407626,0.7821081506,0.7507792304,0.8600771669,0.8472418134,0.8352412506,0.8142859681,0.7945935549,0.6126955079,0.6033034603,0.49948447,0.4539959077,0.6622999636,0.7418675192,0.7730063029,0.8041948928,0.8088070937,0.8356587592,0.7974588095,0.7485764256,0.8633361151,0.8744717299,0.8076207727,0.8918778016,0.8660937066,0.8174275359,0.8102789737,0.7529344639,0.8739031802,0.883393261,0.8927851015,0.9046391984,0.8599001052,0.8322360354,0.8271668921,0.8506204105,0.8065327042,0.7498654366,0.8679846046,0.861511209,0.7497058684,0.6988375715,0.5896197396,0.5304043999,0.4761905982,0.3143141423,0.4136765976,0.4691613337,0.6023862013,0.7940099153,0.7964398187,0.7983725848,0.7976286943,0.840349683,0.8315302139,0.7816622406,0.7793970738,0.7817272942,0.8332992767,0.834211666,0.822160906,0.8826816104,0.8593295172,0.8547211308,0.8841613017,0.9051531055,0.7519613023,0.7118563899,0.6833545174,0.5581904788,0.6342427408,0.7478003396,0.7984832874,0.7004331881,0.7000102761,0.7245431354,0.7462314898,0.803996407,0.8377781209,0.8896487828,0.930894521,0.9015564405,0.803267774,0.6961906471,0.6700857101,0.5628437987,0.4483776785,0.3007528735,0.4574612308,0.3546403056,0.624196068,0.6969731535,0.7959058619,0.81798387,0.8397548717,0.862056468,0.8659328677,0.7404763341,0.7169854662,0.7291720559,0.7484941347,0.7972438543,0.7860714618,0.8611959,0.8316571732,0.8306156031,0.87242441,0.8199298528,0.6909932585,0.7591455159,0.777270632,0.7079301893,0.7559308822,0.7046143416,0.7018277474,0.7231507893,0.7179363678,0.8005568079,0.7379327059,0.7910500906,0.8402079521,0.879146659,0.9105946018,0.8817465226,0.8289868243,0.7742838114,0.7614294373,0.7324594634,0.7303461557,0.6434405449,0.7531562735,0.6813592856,0.4929561235,0.3812343152,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0195777957,"qmean6_z_score":-0.8001172737,"torsion_z_score":-0.0074239292,"torsion_norm_score":-0.3303057545,"ss_agreement_z_score":-0.8337748418,"acc_agreement_norm_score":0.627388535,"cbeta_norm_score":-0.007802313,"packing_z_score":0.0942110285,"packing_norm_score":-0.3737673716,"qmean4_z_score":-0.2797710916,"interaction_z_score":-0.829243686,"ss_agreement_norm_score":0.5510169958,"avg_local_score":0.7916254993,"cbeta_z_score":-1.3802006615,"qmean6_norm_score":0.7444892415,"qmean4_norm_score":0.7658239492,"acc_agreement_z_score":-0.5788576388,"avg_local_score_error":0.053}
+      },
+    
+      "02":{
+        'qmean_local' : { 
+        "A":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.7644075461,0.7792466143,0.7683885359,0.8617584468,0.7383379695,0.706126502,0.6031487992,0.5525577326,0.5499159229,0.6031863567,0.6888438813,0.7164218661,0.7435557639,0.6944544088,0.702399129,0.7550668226,0.6767732479,0.5749055492,0.6931517171,0.7336019896,0.7176033732,0.8219636607,0.8537357033,0.9015632322,0.9213547439,0.9034999709,0.9062371937,0.8741914279,0.8491784035,0.8716382199,0.9332626327,0.9099826562,0.9012013948,0.8265966606,0.8587559292,0.8005302059,0.8864537196,0.8954756945,0.796649709,0.8211834523,0.7951534289,0.6959586839,0.5779289335,0.6849908935,0.7144983262,0.7702362633,0.754692586,0.7527507281,0.8511818936,0.7825165943,0.7362660897,0.7900610117,0.8730677832,0.840018338,0.7788879544,0.8010677723,0.8950495148,0.9593949203,0.9000910011,0.9404213154,0.9175543721,0.8284078542,0.7943130247,0.814826748,0.8095669869,0.8409730523,0.8921909466,0.9835020844,0.95392455,0.9248399011,0.902873855,0.9281678563,0.8339869825,0.7828372888,0.7382064766,0.8234437675,0.8410754337,0.9101509136,0.9152326315,0.935756151,0.8911599873,0.906132645,0.935765126,0.9786528643,0.9007395597,0.9857902572,0.9327588832,0.8319885394,0.891184228,0.9407396241,0.9175646497,0.8623482598,0.827388845,0.8197687859,0.8117630444,0.8477550364,0.8964822521,0.8803108159,0.8651007718,0.9574664223,0.9131997057,0.7414682548,0.780458476,0.7793977809,0.8061928508,0.851698097,0.8355337357,0.8696849888,0.8856891058,0.8716088168,0.8958763734,0.9834242159,0.8930430537,0.9114737058,0.9349223299,0.9156845781,0.8541246794,0.855820476,0.8950323826,0.8203930443,0.8761963097,0.8828654761,0.8239251452,0.7977992839,0.8356238554,0.7929393659,0.7764888854,0.7522173014,0.4233972811,0.1896797694,0.186528826,0.5109397641,0.1219120968,0.4249744676,0.3918485451,0.5681579069,0.5393211375,0.4995858111,0.6928369473,0.7441545322,0.7815863577,0.8117546081,0.7298357,0.8057776219,0.8568940924,0.7918264198,0.8499555528,0.8485666525,0.8992283403,0.9182364758,0.8903476191,0.9432214278,0.8693456705,0.8487241011,0.8703883525,0.7936166432,0.8446750439,0.8811729154,0.8495922254,0.9111362955,0.8645862758,0.8591500469,0.8321555201,0.746547177,0.7880452324,0.7514123405,0.8190336772,0.8192518248,0.8721589542,0.8344420471,0.8557417896,0.8854998391,0.829549754,0.7696002081,0.8239369816,0.839481347,0.7893729994,0.8124047358,0.8070579509,0.7552136866,0.8251104838,0.7992826971,0.8274789389,0.912045128,0.9089792292,0.8687071499,0.8467868305,0.8170372049,0.8650074355,0.8860488394,0.7831045403,0.8633281389,0.8562087744,0.8525969401,0.8291310716,0.803260195,0.8034659007,0.7236311175,0.8337327719,0.8327178762,0.8704102051,0.8930318599,0.8885353962,0.8907549563,0.8669402707,0.8579552817,0.890894364,0.8819884614,0.858204177,0.8157553717,0.8148598772,0.8208688085,0.7940420278,0.8356876776,0.8467133414,0.8750688484,0.8363589507,0.7706218037,0.868772036,0.8336172027,0.8483254894,0.7798630439,0.8005534996,0.7816084054,0.8031143699,0.8734819468,0.8728911207,0.8647791595,0.881682694,0.8380664185,0.8307867002,0.9097917741,0.8847523696,0.7132138388,0.7821257866,0.7618851412,0.6540503067,0.8016162164,0.8097588812,0.7251377827,0.8141072054,0.8122668757,0.8325432069,0.7854683658,0.8066962733,0.8094230591,0.8070099517,0.7901066275,0.8113181962,0.7977707901,0.7756196866,0.8478994692,0.8012338016,0.7680055929,0.8467892072,0.7921468577,0.7914407654,0.8035151967,0.775095598,0.7671754628,0.744170679,0.7765684451,0.6672533986,0.7328837714,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0190847479,"qmean6_z_score":-1.3279392021,"torsion_z_score":-0.3392285578,"torsion_norm_score":-0.2838794775,"ss_agreement_z_score":-3.0877199188,"acc_agreement_norm_score":0.7007575758,"cbeta_norm_score":-0.0110385903,"packing_z_score":0.0365561969,"packing_norm_score":-0.3741948839,"qmean4_z_score":-0.4468516565,"interaction_z_score":-0.9990776976,"ss_agreement_norm_score":0.2641489501,"avg_local_score":0.8094833779,"cbeta_z_score":-0.564146561,"qmean6_norm_score":0.7153203303,"qmean4_norm_score":0.7563945436,"acc_agreement_z_score":0.159315134,"avg_local_score_error":0.051}
+      },
+    
+      "03":{
+        'qmean_local' : { 
+        "A":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.6159923586,0.6876006472,0.868071552,0.915242509,0.9376740617,0.9416404177,0.9223303208,0.8945329432,0.881050739,0.8964053329,0.8840270538,0.853640097,0.8838693374,0.9238138534,0.9171382909,0.9116265995,0.8861361085,0.8758558488,0.9156224704,0.8731807758,0.8976824241,0.9275599911,0.8598716981,0.8740352024,0.9467487916,0.8340593627,0.8160844522,0.884490457,0.8379411996,0.9314001309,0.8959145994,0.9183777028,0.948402395,0.9581109594,0.9255747975,0.9415405855,0.9180064292,0.8520134477,0.8733561768,0.8246469255,0.8644478135,0.8139893319,0.81725699,0.7788321582,0.7993255564,0.8280034758,0.8617314951,0.9032392198,0.8739068842,0.9013384589,0.8953852173,0.8601782419,0.8307099079,0.9048201422,0.8712762182,0.8188193216,0.8192318085,0.8686740789,0.8438481803,0.8295796003,0.8148834814,0.8252151525,0.8838309299,0.8294511066,0.7971334035,0.830507709,0.8274368692,0.8123847056,0.7646093993,0.7930195351,0.831778224,0.8476096292,0.8655439943,0.8408218666,0.8990290402,0.9398167588,0.9336012267,0.9426907797,0.9288215375,0.9360456168,0.8987871223,0.9012101368,0.9318047407,0.8642556044,0.8787716924,0.8988802618,0.942217874,0.8492506883,0.8924746589,0.9245450533,0.943315122,0.923446626,0.9458458131,0.9242176707,0.9331261674,0.8943536789,0.8165585771,0.7909829051,0.7483270203,0.717807955,0.7789730444,0.7605085724,0.7969246518,0.8020204575,0.7991356012,0.868425108,0.8950494532,0.8799856818,0.9188132878,0.9537518685,0.9139491747,0.8936712735,0.9146145139,0.9076051465,0.8856203114,0.8319799188,0.8855128235,0.8417501369,0.9103065641,0.9395784394,0.9456607241,0.9803313226,0.9423976807,0.8881714365,0.8923048216,0.8779986497,0.8383645287,0.7260944342,0.6703570365,0.7712513519,0.8372166338,0.8934877096,0.8334469439,0.8526824615,0.8125333615,0.8418281883,0.8911057878,0.8810792244,0.824623002,0.893422224,0.917839803,0.897575677,0.8952410771,0.8982645142,0.9158000998,0.8452991122,0.894324354,0.9187847359,0.9513451623,0.942765267,0.9337717892,0.9235961303,0.8423400581,0.7987364158,0.7688791613,0.7685104998,0.7635635654,0.8067190751,0.8524556074,0.810607102,0.7940159216,0.8114424904,0.7827957869,0.7940002395,0.8177548578,0.6015194276,0.5039868014,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0275248532,"qmean6_z_score":-0.173823655,"torsion_z_score":0.2021790015,"torsion_norm_score":-0.3639547206,"ss_agreement_z_score":-0.5405358038,"acc_agreement_norm_score":0.6646706587,"cbeta_norm_score":-0.0147856379,"packing_z_score":-0.9250737182,"packing_norm_score":-0.3075077028,"qmean4_z_score":-0.063817232,"interaction_z_score":0.3483809639,"ss_agreement_norm_score":0.5852592439,"avg_local_score":0.8624236034,"cbeta_z_score":0.2129571972,"qmean6_norm_score":0.7731550927,"qmean4_norm_score":0.7783299288,"acc_agreement_z_score":-0.0306176763,"avg_local_score_error":0.067}
+      },
+    
+      "08":{
+        'qmean_local' : { 
+        "A":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.4491076773,0.6071456582,0.8749593734,0.8602934134,0.9038690759,0.9350226602,0.9511351454,0.9123730644,0.9164020128,0.8892304509,0.8972212967,0.8779228356,0.8812910123,0.9083475331,0.9481441527,0.9058387231,0.902757102,0.8938257405,0.8881209414,0.904966624,0.8517372833,0.8744818349,0.9162987468,0.8401897331,0.8537889722,0.9276405954,0.805330757,0.7909615076,0.8526938971,0.7810302427,0.9133296502,0.8852916769,0.916292956,0.9445783643,0.9589848798,0.9193871697,0.9365582564,0.916345438,0.8614246079,0.8705323225,0.8124903258,0.8673080669,0.8153366464,0.7999674608,0.7596681105,0.7229337264,0.7747664411,0.8384571475,0.8934589679,0.8548790984,0.8952668027,0.887072259,0.8612320701,0.8295911974,0.9167731061,0.8653655085,0.822082517,0.8243985652,0.8724070744,0.8302020108,0.8352528721,0.8417928533,0.8409892573,0.902420343,0.8677287581,0.8494994065,0.8698238814,0.8462666562,0.8383174559,0.8045128653,0.820848503,0.8524370146,0.8810098053,0.8658714626,0.8323774272,0.8947513761,0.9381191196,0.9440153805,0.9438667887,0.919470081,0.9239264485,0.889390244,0.8859967648,0.9081095339,0.824117522,0.8598532867,0.8775567682,0.917253676,0.8216599681,0.8723528288,0.9131584318,0.9374584073,0.9166137293,0.9487612995,0.9210391206,0.9426344657,0.9053480033,0.8307279518,0.8301472277,0.7899284945,0.7434670769,0.7943526987,0.7853645287,0.7987753139,0.7916300337,0.7655330224,0.8592411616,0.8826543192,0.8663074611,0.9186960321,0.9611441039,0.9060599677,0.8888933931,0.9195882943,0.9120712627,0.8936775602,0.8388233225,0.8696097386,0.8410066539,0.9020563845,0.927804435,0.9459775914,0.9874203668,0.9536543787,0.8997101692,0.9004653857,0.8947862351,0.8697928482,0.7921791012,0.6916616646,0.8088689482,0.8749884255,0.9182473631,0.848497187,0.879527647,0.8161011556,0.8443355134,0.9015106398,0.8691792463,0.802495058,0.897003644,0.9207261256,0.8990705653,0.8971620651,0.9033308683,0.9195184359,0.8310245232,0.8801374272,0.9141613324,0.9519420634,0.9335034262,0.9368884421,0.9317910794,0.8563230674,0.7943422429,0.782236454,0.7975994507,0.7778787279,0.8346633654,0.8503475779,0.8015446127,0.7720442503,0.7756166093,0.7490913387,0.7576228403,0.7411541542,0.6890035477,0.6079724931,0.6116020451,0.4149988466,0.4822117716,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"qmean4_norm_score":0.7523923385,"qmean4_z_score":-0.6451274291,"qmean6_norm_score":0.7473524381,"qmean6_z_score":-0.725277104,"interaction_norm_score":-0.0281656343,"interaction_z_score":0.4869601052,"cbeta_norm_score":-0.0163090155,"cbeta_z_score":0.5325713918,"packing_norm_score":-0.3440753701,"packing_z_score":-0.3704847194,"torsion_norm_score":-0.2525421869,"torsion_z_score":-0.6777890034,"ss_agreement_norm_score":0.5775369825,"ss_agreement_z_score":-0.5993595704,"acc_agreement_norm_score":0.6608187135,"acc_agreement_z_score":-0.0876627746,"avg_local_score":0.8552782752,"avg_local_score_error":0.066}
+      },
+    
+      "04":{
+        'qmean_local' : { 
+        "A":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.2145973616,0.4441605414,0.4967823826,0.6452892844,0.7374035946,0.708789061,0.7000182083,0.7210505432,0.7546239838,0.7950873703,0.7756129587,0.7156017818,0.7791005046,0.644954417,0.686598884,0.7016077843,0.7433207312,0.694548402,0.6142089961,0.6935733365,0.7898955585,0.7684927055,0.7774328485,0.808096609,0.8323867443,0.8253796026,0.7570666127,0.7769380034,0.7412320891,0.7535869707,0.7674685511,0.8764617017,0.8252649143,0.8278101262,0.8300846154,0.8431064972,0.7892980154,0.8306083724,0.8100334226,0.8507734095,0.7388337721,0.7677257118,0.7564565767,0.764499525,0.8356719594,0.7870341855,0.7388363007,0.8135720038,0.841211288,0.7942329356,0.838971685,0.8026708008,0.7564456045,0.7339947233,0.7667844382,0.7627298589,0.7741286432,0.8107231782,0.8603101645,0.8177686088,0.8280393337,0.8168395211,0.8515646431,0.7710429063,0.752931216,0.6767207926,0.7236232591,0.735516563,0.6829512142,0.756259103,0.7923414598,0.7934748223,0.7448937626,0.7617965027,0.7718493648,0.8333689617,0.8321148719,0.701890672,0.6683357215,0.6561849016,0.6545775159,0.6779162424,0.7924411441,0.7821242305,0.8184894398,0.6943318544,0.7457419763,0.7719854605,0.7792329056,0.7803972086,0.8301811574,0.778650541,0.7670762449,0.6901225796,0.7829654138,0.7749089519,0.7549186575,0.7751650571,0.8472972798,0.8113462636,0.7992683941,0.6488669043,0.8387366307,0.7790880548,0.6098180673,0.7912506132,0.7277200773,0.5471855028,0.7039352542,0.6949234686,0.6621051548,0.6285494695,0.5713003301,0.4199328881,0.2636215751,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0128240846,"qmean6_z_score":-1.4036757082,"torsion_z_score":-0.7534480839,"torsion_norm_score":-0.2447510013,"ss_agreement_z_score":-2.3601653069,"acc_agreement_norm_score":0.6956521739,"cbeta_norm_score":-0.0111667046,"packing_z_score":0.3798714201,"packing_norm_score":-0.3981392602,"qmean4_z_score":-0.7396780276,"interaction_z_score":-1.6651723676,"ss_agreement_norm_score":0.2482069569,"avg_local_score":0.7413814049,"cbeta_z_score":-0.4721235436,"qmean6_norm_score":0.7027091959,"qmean4_norm_score":0.7467325514,"acc_agreement_z_score":0.9975542829,"avg_local_score_error":0.078}
+      },
+    
+      "06":{
+        'qmean_local' : { 
+        "A":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.1913356294,0.1784844818,0.3704908786,0.5774123206,0.5059762183,0.5127377058,0.5814652873,0.5509639068,0.5680632148,0.6835996838,0.6420260019,0.6353618272,0.6156150309,0.6322711186,0.6384845842,0.6659214408,0.6129938998,0.7048448434,0.7556998263,0.7317166544,0.7169500303,0.6483995466,0.7029798199,0.755138043,0.7410072156,0.7581093,0.7641446756,0.8380596181,0.878824602,0.8025504591,0.8939980907,0.7954157705,0.7654313253,0.7872889458,0.7503982996,0.7841107392,0.8443642052,0.8028267436,0.8680070633,0.8214095524,0.7889054091,0.7601444319,0.7263973763,0.7434252432,0.6901524382,0.7785164833,0.7574703352,0.7856677203,0.7817554408,0.815182091,0.8097347919,0.7851087969,0.7145701927,0.7961804607,0.7925587566,0.7556678112,0.7471575052,0.682929854,0.6033718216,0.6724956536,0.7217351941,0.7627816409,0.8228852685,0.8331317545,0.8042762102,0.7916558113,0.7736593909,0.8393129352,0.8579550374,0.7894392671,0.8165397474,0.8108520717,0.7888642483,0.7772391092,0.7776507167,0.7261982139,0.7072429122,0.7923864914,0.79262107,0.818322463,0.8558481877,0.8455142534,0.8340027617,0.811211799,0.7825211284,0.8057307341,0.7923644164,0.743789982,0.7462990871,0.7937400074,0.7945467515,0.7601151944,0.7704533829,0.7844806078,0.8006409983,0.7878045168,0.7272717005,0.8341314946,0.7539558402,0.8107383968,0.7472593629,0.7459912098,0.7138281831,0.756988299,0.7854015764,0.7764952853,0.8251835719,0.8404465809,0.8175127253,0.814909374,0.8855096078,0.8865892417,0.758693772,0.785715835,0.762334898,0.6945945794,0.7496328008,0.7647007104,0.6926498218,0.760391461,0.7754205005,0.7849220942,0.7453174756,0.7819682031,0.7629878198,0.7428200063,0.6971845143,0.737001923,0.732543936,0.7193783615,0.8037867648,0.7719010177,0.7414625531,0.8024160991,0.7730079933,0.7547677675,0.7591655337,0.7380621351,0.7328592109,0.6842592834,0.6846536408,0.5024416394,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0165029531,"qmean6_z_score":-2.732498843,"torsion_z_score":-1.6202186616,"torsion_norm_score":-0.1042934611,"ss_agreement_z_score":-3.5341597619,"acc_agreement_norm_score":0.6971830986,"cbeta_norm_score":-0.0108250204,"packing_z_score":-1.2628386238,"packing_norm_score":-0.2821532976,"qmean4_z_score":-2.1228956635,"interaction_z_score":-1.4413917782,"ss_agreement_norm_score":0.1665435885,"avg_local_score":0.7429249252,"cbeta_z_score":-0.5200950642,"qmean6_norm_score":0.6373004879,"qmean4_norm_score":0.6738135833,"acc_agreement_z_score":0.8743250509,"avg_local_score_error":0.071}
+      },
+    
+      "05":{
+        'qmean_local' : { 
+        "A":[0.3995469364,0.4423583117,0.6293986986,0.3551440883,0.4076693435,0.5411985034,0.4641009648,0.5133955521,0.4927292876,0.4841164222,0.4752967034,0.481120026,0.4880773763,0.5036265571,0.5735511892,0.595240215,0.6825612527,0.667886423,0.7361163665,0.8047596401,0.813588307,0.7935360054,0.7599790797,0.7509151855,0.7131840124,0.6954199672,0.722852619,0.7284536649,0.713798663,0.6543801588,0.7224599722,0.7314059626,0.7215661131,0.7623436227,0.7584839982,0.7527178259,0.7124301877,0.7135925351,0.7636313771,0.7873192085,0.82385971,0.7917282994,0.8191681754,0.8052396621,0.7287790991,0.684164715,0.7137214458,0.7552219891,0.75234386,0.7992681657,0.7842422449,0.7663246727,0.7713750155,0.8076691506,0.7521868759,0.7855973751,0.7918909777,0.8148321559,0.7691882987,0.8335614579,0.784504753,0.7705776745,0.7799447711,0.7912807714,0.7599603715,0.7169540733,0.6599393674,0.6238199351,0.6919995449,0.6444529328,0.6448551217,0.7085926762,0.7346343045,0.6798848931,0.6977411771,0.783265175,0.7607503042,0.7790435036,0.7667970382,0.7482020085,0.7356713164,0.6996060643,0.6949344842,0.5983978955,0.712921366,0.7026311195,0.700611972,0.7487154172,0.8058360595,0.7951828725,0.8039732266,0.7972631795,0.8207667416,0.8307969715,0.7956422999,0.766923587,0.7746835823,0.7868095449,0.8113405454,0.7977022373,0.7830089955,0.7797079329,0.7740020865,0.7920959561,0.7917961342,0.4786641335,0.4289884069,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0048916984,"qmean6_z_score":-5.1558963452,"torsion_z_score":-4.4776328479,"torsion_norm_score":0.2725666114,"ss_agreement_z_score":-2.4927231978,"acc_agreement_norm_score":0.6542056075,"cbeta_norm_score":0.000417723,"packing_z_score":-1.396699622,"packing_norm_score":-0.2427097781,"qmean4_z_score":-5.2072253254,"interaction_z_score":-2.4984058483,"ss_agreement_norm_score":0.1889358088,"avg_local_score":0.7065064504,"cbeta_z_score":-2.1431600814,"qmean6_norm_score":0.4914756621,"qmean4_norm_score":0.5124765155,"acc_agreement_z_score":0.2921384173,"avg_local_score_error":0.078}
+      },
+    
+      "07":{
+        'qmean_local' : { 
+        "A":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0.4526491477,0.4404045509,0.6928754906,0.7091694324,0.6858118063,0.7168863976,0.7658065982,0.7660828153,0.7498461974,0.7552796526,0.7886846098,0.7041010669,0.7375369925,0.7880591606,0.7622542043,0.6751244287,0.6688509166,0.7124875898,0.6928094432,0.7750857701,0.7264505004,0.7511115229,0.7298007078,0.7089765155,0.6848396559,0.6650687949,0.5787469182,0.6085179241,0.6911288836,0.7000414891,0.7263998384,0.7179303254,0.7347646467,0.7240794404,0.6641219601,0.7604701522,0.7037796905,0.7590502146,0.7774703338,0.7603924129,0.5975431189,0.618514081,0.6705981448,0.7230212645,0.5716314497,0.5223646454,0.6732121725,0.7301514366,0.6813010771,0.6777000178,0.7007704694,0.6911509376,0.6875414104,0.417549025,0.4339259869,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0218516809,"qmean6_z_score":-1.156359119,"torsion_z_score":0.0115198242,"torsion_norm_score":-0.2995626824,"ss_agreement_z_score":-1.3791331328,"acc_agreement_norm_score":0.6181818182,"cbeta_norm_score":-0.008548651,"packing_z_score":-0.9219813227,"packing_norm_score":-0.2525333978,"qmean4_z_score":-0.6646489946,"interaction_z_score":-0.8103083022,"ss_agreement_norm_score":0.2357014991,"avg_local_score":0.6838167898,"cbeta_z_score":-1.0755260954,"qmean6_norm_score":0.6811645507,"qmean4_norm_score":0.7301627185,"acc_agreement_z_score":-0.880461777,"avg_local_score_error":0.111}
+      }
+    
+ }  
+
+
+ $(document).ready( function()
+   {  
+      drawQMEAN('01')
+      drawQMEAN('02')
+      drawQMEAN('03')
+      drawQMEAN('08')
+      drawQMEAN('04')
+      drawQMEAN('06')
+      drawQMEAN('05')
+      drawQMEAN('07')
+   }) ;
+
+function drawQMEAN(id)
+{
+  var resCount = 0;
+  var local_scores = [];
+  for(chain in modelData[id].qmean_local)
+  {
+    var ls = {'chain':chain,'scores':[]};
+
+    for(var i=0; i<modelData[id].qmean_local[chain].length; i++)
+    {
+        ls['scores'].push([i, modelData[id].qmean_local[chain][i]]);
+        if(modelData[id].qmean_local[chain][i])
+          resCount++;
+    }
+    local_scores.push(ls);
+  }
+
+  drawQMEANLocal(local_scores, id);
+
+  drawQMEANGlobal(modelData[id]['qmean_global'], resCount, id, false);
+
+  $('a[rel=lq-'+id+'],a[href="#qn-chart-'+id+'"]')
+    .fancybox(
+      {
+        padding:30, 
+        'cyclic':true,
+        'hideOnContentClick':true,
+        beforeShow:function(a,b)
+        {
+          var id = $(this.content[0]).first().attr('id');
+          if(id.indexOf('lq-chart')>-1)
+            $('#'+id).closest('.fancybox-outer').after(
+               '<a style="color:#666;float:right;" onclick="svgToPNG(\''+id+'\',\'Local_quality_estimate.png\');">&#128247; Save as PNG</a>'
+               );
+          else if(id.indexOf('qn-chart')>-1)
+            $('#'+id).after(
+               '<a style="color:#666;float:right;" onclick="svgToPNG(\''+id+'\',\'Quality_comparison.png\');">&#128247; Save as PNG</a>'
+               );
+        }
+      });
+}
+
+
+
+
+  </script>
+
+  </body>
+</html>

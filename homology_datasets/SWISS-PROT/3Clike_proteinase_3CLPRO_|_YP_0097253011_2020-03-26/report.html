@@ -1,0 +1,1144 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3C-like proteinase (3CL-PRO) | YP_009725301.1 | Report</title>
+    <meta name="description" content="SWISS-MODEL modelling results for 3C-like proteinase (3CL-PRO) | YP_009725301.1." />
+    <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css"/>
+    <style>
+			.sequence { font-size: 12px; font-family:"Courier New", Courier, monospace;}
+			h2 {font-size: 1.2em; font-family:Arial; margin:20 0 0 0}
+			h3 {font-size: 1.0em; font-family:Arial; margin:0 0 0 0}
+			
+			.borderedTbl>tbody>tr>td, .borderedTbl th{ 
+        text-align:center;
+  			border-top:1px solid #DDD;
+  			border-left:1px solid #DDD;
+      }
+      .borderedTbl{
+        border-bottom:1px solid #DDD;
+        border-right:1px solid #DDD; 
+      }
+      td { 
+        -webkit-hyphens: auto;
+           -moz-hyphens: auto;
+                hyphens: auto; 
+              }
+
+			body {
+			width:100%; 
+			height:100%; 
+			background-color: #E7E8EA;
+			margin: 0;
+			padding: 0;
+			word-wrap: break-word;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+
+			}
+			#content{
+			padding:20px;
+			width:780px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color:#FFF;}
+			
+			#sib_footer {
+			background-color: #333333;
+			color: #F7F8FA;
+			font-family: Verdana;
+			font-size: 10px;
+			font-weight: normal;
+			height: 20px;
+			letter-spacing: 1px;
+			
+			width:760px;
+      margin-left:auto;
+      margin-right:auto;
+      padding:0px 20px 0px 20px
+			}
+			
+			#sib_footer a {
+  			color: #FFFFFF;
+  			font-family: Verdana;
+  			font-size: 10px;
+  			font-weight: normal;
+  			letter-spacing: 1px;
+			}
+			a, a:link, a:visited {
+			color: #D6161D;
+			text-decoration: none;
+			} 	
+
+			.alTbl{ font-family:'Courier New', Courier, monospace; }
+	   img{ border:0; }
+			
+	@media print{
+	
+	#content{
+			padding:20px;
+			background-color:#FFF;
+		}
+	body{ 
+	    width:100%;
+	    height:100%; 
+	    background-color: #FFF;
+			padding: 0;
+		}	
+	#sib_footer{
+		display:none;
+	}
+	}
+      
+    </style>
+  </head>
+  <body>
+  
+  <div id="content">
+  	<table border=0 width="100%">
+  		<tr>
+    		<td valign="middle">
+  			<a title="SIB Swiss Institute of Bioinformatics" href="https://www.sib.swiss">
+  			<img src="images/sib_ExPASy_logo_small.png"></a>
+  		</td>
+  		<td valign="middle">
+  			<a title="Biozentrum, University of Basel" href="https://www.biozentrum.unibas.ch">
+  			<img src="images/biozentrum_en.png"></a>
+  		</td>
+		  <td valign="middle"><div style="font-size:1.9em;">SWISS-MODEL Homology Modelling Report</div> </td>
+	 </tr>
+	</table> 
+    
+  <div style="clear:both"></div>
+
+
+ 
+  <h2>Model Building Report</h2>
+  <p>
+This document lists the results for the homology modelling project &quot;3C-like proteinase (3CL-PRO) | YP_009725301.1&quot; submitted to SWISS-MODEL workspace
+on March 26, 2020, 11:46 a.m..The submitted primary amino acid sequence is given in Table T1.</p>
+<p>If you use any results in your research, please cite the relevant publications:</p>
+<ul>
+  <li>Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R.,
+      Heer, F.T., de Beer, T.A.P., Rempfer, C., Bordoli, L., Lepore, R., Schwede, T.   
+      SWISS-MODEL: homology modelling of protein structures and complexes.
+      Nucleic Acids Res. 46(W1), W296-W303 (2018).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/29788355"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1093/nar/gky427"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+      <li><a name="promodII"></a>Guex, N., Peitsch, M.C., Schwede, T. Automated
+          comparative protein structure modeling with SWISS-MODEL and
+          Swiss-PdbViewer: A historical perspective. Electrophoresis 30,
+          S162-S173 (2009).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/19517507"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1002/elps.200900140"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+  <li>Bienert, S., Waterhouse, A., de Beer, T.A.P., Tauriello, G., Studer,
+    G., Bordoli, L., Schwede, T. The SWISS-MODEL Repository - new features and
+    functionality. Nucleic Acids Res. 45, D313-D319 (2017).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/27899672"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1093/nar/gkw1132"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+      <li><a name="qmean"></a>Benkert, P., Biasini, M., Schwede, T. Toward the
+        estimation of the absolute quality of individual protein structure
+        models. Bioinformatics 27,
+        343-350 (2011).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/21134891"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1093/bioinformatics/btq662"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+      <li><a name="qsqe"></a>Bertoni, M., Kiefer, F., Biasini, M., Bordoli, L.,
+        Schwede, T. Modeling protein quaternary structure of homo- and
+        hetero-oligomers beyond binary interactions by homology. Scientific
+        Reports 7 (2017).
+    <a href="https://www.ncbi.nlm.nih.gov/pubmed/28874689"
+       target="_blank"><img src="images/pubmed.jpg
+                                 "
+                            width="17" height="16" align="absmiddle"></a>
+    <a href="https://dx.doi.org/10.1038/s41598-017-09654-8"
+       target="_blank"><img src="images/doi.jpg
+                                 "
+                            width="30" height="16" align="absmiddle"
+                            style="padding-left:2px"></a>
+  </li>
+</ul>
+
+<h2>Results</h2>
+<p>
+The SWISS-MODEL template library (SMTL version 2020-03-25, PDB release 2020-03-20) was searched with 
+BLAST (<a href="#blastp">Camacho et al.</a>) and HHBlits (<a href="#hhblits">Remmert et al.</a>) 
+
+ for evolutionary related structures matching the target sequence in Table T1. For details on the template search, see Materials and Methods. Overall 409 templates were found (Table T2).</p>
+
+
+<h2>Models</h2>
+
+
+<p>The following models were built (see Materials and Methods "Model Building"):</p>
+
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #02</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/02/02.png" target="_blank"><img height="60" src="model/02/02.png"></a>
+  </td>
+  	    <td><a href="model/02/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 2.0.0</td>
+        <td>homo-dimer (matching prediction)</td>
+        <td>
+          <div style="max-width:350px;">None
+          </div>
+        </td>
+        <td>0.99</td>
+        <td>0.58</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl02"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-02" rel="lq-02" class="fancybox">
+              <div id="lq-chart-02-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-02" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-02" class="fancybox">
+              <div id="qn-chart-02-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-02" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/02/templates/6lu7.1.A.pdb.gz" target="_blank">6lu7.1.A</a>
+                
+              
+          </td>
+  				<td>100.00</td>
+  				<td>homo-dimer</td>
+  				<td>0.92</td>
+  				<td>HHblits</td>
+  				<td>X-ray</td>
+  				<td>2.16&Aring;</td>
+  				<td>0.62</td>
+  				<td>1 - 306
+
+        </td>
+  				<td>1.00</td>
+  				<td>SARS-CoV-2 main protease</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+
+  
+    <br>
+    <h3>Excluded ligands</h3>
+    <table width="100%" class="borderedTbl">
+      <thead>
+        <tr>
+          <th>Ligand Name.Number</th>
+          <th>Reason for Exclusion</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+    <tbody>
+    
+      
+      <tr><td>02J-ALA-VAL-LEU-PJE-010.1</td><td>
+      Clashing with protein.
+      </td>
+      <td><div style="max-width:650px;">N-[(5-METHYLISOXAZOL-3-YL)CARBONYL]ALANYL-L-VALYL-N~1~-((1R,2Z)-4-(BENZYLOXY)-4-OXO-1-{[(3R)-2-OXOPYRROLIDIN-3-YL]METHYL}BUT-2-ENYL)-L-LEUCINAMIDE</div></td>
+      </tr>
+      
+      <tr><td>02J-ALA-VAL-LEU-PJE-010.2</td><td>
+      Clashing with protein.
+      </td>
+      <td><div style="max-width:650px;">N-[(5-METHYLISOXAZOL-3-YL)CARBONYL]ALANYL-L-VALYL-N~1~-((1R,2Z)-4-(BENZYLOXY)-4-OXO-1-{[(3R)-2-OXOPYRROLIDIN-3-YL]METHYL}BUT-2-ENYL)-L-LEUCINAMIDE</div></td>
+      </tr>
+      
+    
+		</tbody>
+	</table>
+  
+
+<br>
+
+
+<pre>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>6lu7.1.A  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>6lu7.1.A  SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>6lu7.1.A  YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>6lu7.1.A  PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br><br><br>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>6lu7.1.B  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>6lu7.1.B  SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>6lu7.1.B  YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>6lu7.1.B  PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #01</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/01/01.png" target="_blank"><img height="60" src="model/01/01.png"></a>
+  </td>
+  	    <td><a href="model/01/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 3.0.0</td>
+        <td>homo-dimer (matching prediction)</td>
+        <td>
+          <div style="max-width:350px;"> 1 x GLY: GLYCINE;<br> 2 x O6K: ~{tert}-butyl ~{N}-[1-[(2~{S})-3-cyclopropyl-1-oxidanylidene-1-[[(2~{S},3~{R})-3-oxidanyl-4-oxidanylidene-1-[(3~{S})-2-oxidanylidenepyrrolidin-3-yl]-4-[(phenylmethyl)amino]butan-2-yl]amino]propan-2-yl]-2-oxidanylidene-pyridin-3-yl]carbamate;
+          </div>
+        </td>
+        <td>0.99</td>
+        <td>0.45</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl01"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-01" rel="lq-01" class="fancybox">
+              <div id="lq-chart-01-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-01" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-01" class="fancybox">
+              <div id="qn-chart-01-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-01" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/01/templates/6y2g.1.A.pdb.gz" target="_blank">6y2g.1.A</a>
+                
+              
+          </td>
+  				<td>100.00</td>
+  				<td>homo-dimer</td>
+  				<td>0.94</td>
+  				<td>HHblits</td>
+  				<td>X-ray</td>
+  				<td>2.20&Aring;</td>
+  				<td>0.62</td>
+  				<td>1 - 301
+
+        </td>
+  				<td>1.00</td>
+  				<td>SARS-CoV-2 (2019-nCoV) main protease</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+    <br>
+    <h3>Included Ligands</h3>
+  	<table width="100%" class="borderedTbl">
+  		<thead>
+  			<tr>
+	  			<th>Ligand</th>
+	  			<th>Description</th>
+	  		</tr>
+	  	</thead>
+		<tbody>
+	  
+      <tr><td>1 x GLY</td>
+      <td><div style="max-width:650px;">GLYCINE</div></td>
+      </tr>
+    
+      <tr><td>2 x O6K</td>
+      <td><div style="max-width:650px;">~{tert}-butyl ~{N}-[1-[(2~{S})-3-cyclopropyl-1-oxidanylidene-1-[[(2~{S},3~{R})-3-oxidanyl-4-oxidanylidene-1-[(3~{S})-2-oxidanylidenepyrrolidin-3-yl]-4-[(phenylmethyl)amino]butan-2-yl]amino]propan-2-yl]-2-oxidanylidene-pyridin-3-yl]carbamate</div></td>
+      </tr>
+    
+    </tbody>
+    </table>
+
+  
+
+<br>
+
+
+<pre>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>6y2g.1.A  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>6y2g.1.A  SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>6y2g.1.A  YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>6y2g.1.A  PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br><br><br>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>6y2g.1.B  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>6y2g.1.B  SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>6y2g.1.B  YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>6y2g.1.B  PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #04</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/04/04.png" target="_blank"><img height="60" src="model/04/04.png"></a>
+  </td>
+  	    <td><a href="model/04/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 2.0.0</td>
+        <td>homo-dimer (matching prediction)</td>
+        <td>
+          <div style="max-width:350px;"> 2 x AZP: (5S,8S,14R)-ETHYL 11-(3-AMINO-3-OXOPROPYL)-8-BENZYL-14-HYDROXY-5-ISOBUTYL-3,6,9,12-TETRAOXO-1-PHENYL-2-OXA-4,7,10,11-TETRAAZAPENTADECAN-15-OATE;
+          </div>
+        </td>
+        <td>0.99</td>
+        <td>0.03</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl04"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-04" rel="lq-04" class="fancybox">
+              <div id="lq-chart-04-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-04" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-04" class="fancybox">
+              <div id="qn-chart-04-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-04" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/04/templates/2a5i.1.A.pdb.gz" target="_blank">2a5i.1.A</a>
+                
+              
+          </td>
+  				<td>96.08</td>
+  				<td>homo-dimer</td>
+  				<td>0.86</td>
+  				<td>HHblits</td>
+  				<td>X-ray</td>
+  				<td>1.88&Aring;</td>
+  				<td>0.61</td>
+  				<td>1 - 306
+
+        </td>
+  				<td>1.00</td>
+  				<td>3C-like peptidase</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+    <br>
+    <h3>Included Ligands</h3>
+  	<table width="100%" class="borderedTbl">
+  		<thead>
+  			<tr>
+	  			<th>Ligand</th>
+	  			<th>Description</th>
+	  		</tr>
+	  	</thead>
+		<tbody>
+	  
+      <tr><td>2 x AZP</td>
+      <td><div style="max-width:650px;">(5S,8S,14R)-ETHYL 11-(3-AMINO-3-OXOPROPYL)-8-BENZYL-14-HYDROXY-5-ISOBUTYL-3,6,9,12-TETRAOXO-1-PHENYL-2-OXA-4,7,10,11-TETRAAZAPENTADECAN-15-OATE</div></td>
+      </tr>
+    
+    </tbody>
+    </table>
+
+  
+    <br>
+    <h3>Excluded ligands</h3>
+    <table width="100%" class="borderedTbl">
+      <thead>
+        <tr>
+          <th>Ligand Name.Number</th>
+          <th>Reason for Exclusion</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+    <tbody>
+    
+      
+      <tr><td>EDO.2</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">1,2-ETHANEDIOL</div></td>
+      </tr>
+      
+      <tr><td>EDO.5</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">1,2-ETHANEDIOL</div></td>
+      </tr>
+      
+    
+      
+      <tr><td>GOL.3</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">GLYCEROL</div></td>
+      </tr>
+      
+      <tr><td>GOL.6</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">GLYCEROL</div></td>
+      </tr>
+      
+    
+		</tbody>
+	</table>
+  
+
+<br>
+
+
+<pre>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>2a5i.1.A  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDTVYCPRHVICTAEDMLNPNYEDLLIRKSNHSFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>2a5i.1.A  SMQNCLLRLKVDTSNPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNHTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>2a5i.1.A  YMHHMELPTGVHAGTDLEGKFYGPFVDRQTAQAAGTDTTITLNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>2a5i.1.A  PLTQDHVDILGPLSAQTGIAVLDMCAALKELLQNGMNGRTILGSTILEDEFTPFDVVRQCSGVTFQ<br><br><br>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>2a5i.1.A  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDTVYCPRHVICTAEDMLNPNYEDLLIRKSNHSFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>2a5i.1.A  SMQNCLLRLKVDTSNPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNHTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>2a5i.1.A  YMHHMELPTGVHAGTDLEGKFYGPFVDRQTAQAAGTDTTITLNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>2a5i.1.A  PLTQDHVDILGPLSAQTGIAVLDMCAALKELLQNGMNGRTILGSTILEDEFTPFDVVRQCSGVTFQ<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+      
+
+
+      <table class="borderedTbl" width="100%" border=0 cellspacing=1 cellpadding=5>
+  		<thead>
+        <tr>
+        <th><h3>Model #03</h3></th>
+        <th>File</th>
+        <th>Built with</th>
+        <th>Oligo-State</th>
+        <th>Ligands</th>
+        <th title="Global Model Quality Estimate">GMQE</th>
+        <th>QMEAN</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="model/03/03.png" target="_blank"><img height="60" src="model/03/03.png"></a>
+  </td>
+  	    <td><a href="model/03/model.pdb" target="_blank">PDB</a></td>
+  		<td>ProMod3 2.0.0</td>
+        <td>homo-dimer (matching prediction)</td>
+        <td>
+          <div style="max-width:350px;"> 2 x DTZ: ZINC(II)HYDROGENSULFIDE;
+          </div>
+        </td>
+        <td>0.99</td>
+        <td>0.15</td>
+      </tr>
+     </table>
+  	
+  	<table width="100%" cellspacing=5>
+  	<tr>
+  	    <td width="30%">
+       	 <table id="qmeanGlobalTbl03"></table>
+        </td>
+          <td width="33%">
+            <a href="#lq-chart-03" rel="lq-03" class="fancybox">
+              <div id="lq-chart-03-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="lq-chart-03" style="display:none"></div>
+          </td>
+
+          <td width="33%">
+            <a href="#qn-chart-03" class="fancybox">
+              <div id="qn-chart-03-thumb" style="margin:12px 4px;"></div>
+            </a>
+            <div id="qn-chart-03" style="display:none"></div>
+          </td>
+  	 </tr>
+  	</table>
+
+
+  	<table class="borderedTbl">
+  		<thead>
+  			<tr>
+  				<th>Template</th>
+  				<th>Seq Identity</th>
+  				<th>Oligo-state</th>
+  				<th>QSQE</th>
+  				<th>Found by</th>
+  				<th>Method</th>
+  				<th>Resolution</th>
+  				<th>Seq Similarity</th>
+  				<th>Range</th>
+  				<th>Coverage</th>
+  				<th>Description</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+        
+        
+        <tr>
+  				<td>
+                
+              <a href="model/03/templates/2z9j.1.A.pdb.gz" target="_blank">2z9j.1.A</a>
+                
+              
+          </td>
+  				<td>96.08</td>
+  				<td>homo-dimer</td>
+  				<td>0.91</td>
+  				<td>HHblits</td>
+  				<td>X-ray</td>
+  				<td>1.95&Aring;</td>
+  				<td>0.61</td>
+  				<td>1 - 302
+
+        </td>
+  				<td>1.00</td>
+  				<td>3C-like proteinase</td>
+  			</tr>
+  		</tbody>
+  	</table> 
+  	
+    
+
+    
+    <br>
+    <h3>Included Ligands</h3>
+  	<table width="100%" class="borderedTbl">
+  		<thead>
+  			<tr>
+	  			<th>Ligand</th>
+	  			<th>Description</th>
+	  		</tr>
+	  	</thead>
+		<tbody>
+	  
+      <tr><td>2 x DTZ</td>
+      <td><div style="max-width:650px;">ZINC(II)HYDROGENSULFIDE</div></td>
+      </tr>
+    
+    </tbody>
+    </table>
+
+  
+    <br>
+    <h3>Excluded ligands</h3>
+    <table width="100%" class="borderedTbl">
+      <thead>
+        <tr>
+          <th>Ligand Name.Number</th>
+          <th>Reason for Exclusion</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+    <tbody>
+    
+      
+      <tr><td>DMS.1</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">DIMETHYL SULFOXIDE</div></td>
+      </tr>
+      
+      <tr><td>DMS.2</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">DIMETHYL SULFOXIDE</div></td>
+      </tr>
+      
+      <tr><td>DMS.3</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">DIMETHYL SULFOXIDE</div></td>
+      </tr>
+      
+      <tr><td>DMS.4</td><td>
+      Not biologically relevant.
+      </td>
+      <td><div style="max-width:650px;">DIMETHYL SULFOXIDE</div></td>
+      </tr>
+      
+    
+		</tbody>
+	</table>
+  
+
+<br>
+
+
+<pre>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>2z9j.1.A  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDTVYCPRHVICTAEDMLNPNYEDLLIRKSNHSFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>2z9j.1.A  SMQNCLLRLKVDTSNPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNHTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>2z9j.1.A  YMHHMELPTGVHAGTDLEGKFYGPFVDRQTAQAAGTDTTITLNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>2z9j.1.A  PLTQDHVDILGPLSAQTGIAVLDMCAALKELLQNGMNGRTILGSTILEDEFTPFDVVRQCSGVTFQ<br><br><br>Target    SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH<br>2z9j.1.B  SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDTVYCPRHVICTAEDMLNPNYEDLLIRKSNHSFLVQAGNVQLRVIGH<br><br>Target    SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC<br>2z9j.1.B  SMQNCLLRLKVDTSNPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNHTIKGSFLNGSCGSVGFNIDYDCVSFC<br><br>Target    YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br>2z9j.1.B  YMHHMELPTGVHAGTDLEGKFYGPFVDRQTAQAAGTDTTITLNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE<br><br>Target    PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ<br>2z9j.1.B  PLTQDHVDILGPLSAQTGIAVLDMCAALKELLQNGMNGRTILGSTILEDEFTPFDVVRQCSGVTFQ<br><br></pre>
+
+
+  <br>
+  <hr><br>
+  
+
+
+
+
+
+<h2>Materials and Methods</h2>
+
+
+
+<h2>Template Search</h2>
+<p>Template search with BLAST and HHBlits
+ has been performed against the SWISS-MODEL template library (SMTL, last update: 2020-03-25, last included PDB release: 2020-03-20).</p>
+
+<p>
+The target sequence was searched with BLAST against the primary amino acid sequence contained in the SMTL.
+
+
+A total of 124 templates were found.
+
+
+</p> 
+
+
+<p>
+An initial HHblits profile has been built using the procedure outlined in (Remmert et al.), followed by 1 iteration of HHblits against NR20. The obtained profile has then be searched against all profiles of the SMTL. A total of 354 templates were found.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Model Building</h2>
+<p>
+Models are built based on the target-template alignment using ProMod3. Coordinates which are conserved between the target and the template are copied from the template to the model. Insertions and deletions are remodelled using a fragment library. Side chains are then rebuilt. Finally, the geometry of the resulting model is regularized by using a force field. In case loop modelling with ProMod3 fails, an alternative model is built with PROMOD-II (<a href="#promodII">Guex et al.</a>).
+</p>
+
+<h2>Model Quality Estimation</h2>
+<p>
+The global and per-residue model quality has been assessed using the QMEAN scoring function (<a href="#qmean">Benkert et al.</a>) . For improved performance, weights of the individual QMEAN terms have been trained specifically for SWISS-MODEL. 
+</p>
+
+<h2>Ligand Modelling</h2>
+<p>
+Ligands present in the template structure are transferred by homology to the model when the following criteria are met: (a) The ligands are annotated as biologically relevant in the template library, (b) the ligand is in contact with the model, (c) the ligand is not clashing with the protein, (d) the residues in contact with the ligand are conserved between the target and the template. If any of these four criteria is not satisfied, a certain ligand will not be included in the model. The model summary includes information on why and which ligand has not been included.</p>
+
+<h2>Oligomeric State Conservation</h2>
+<p>
+The quaternary structure annotation of the template is used to model the target sequence in its oligomeric form. The method (<a href="#qsqe">Bertoni et al.</a>) is based on a supervised machine learning algorithm, Support Vector Machines (SVM), which combines interface conservation, structural clustering, and other template features to provide a quaternary structure quality estimate (QSQE). The QSQE score is a number between 0 and 1, reflecting the expected accuracy of the interchain contacts for a model built based a given alignment and template. Higher numbers indicate higher reliability. This complements the GMQE score which estimates the accuracy of the tertiary structure of the resulting model.</p>
+
+<h2>References</h2>
+<p>
+  <ul>
+    <li><a name="blastp"></a><b>BLAST</b><br>
+        Camacho, C., Coulouris, G., Avagyan, V., Ma, N., Papadopoulos, J.,
+        Bealer, K., Madden, T.L. BLAST+: architecture and applications. BMC
+        Bioinformatics 10, 421-430 (2009).
+        <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/20003500">
+          <img width="17" align="absmiddle" height="16"
+               src="images/pubmed.jpg
+                    "></a>
+        <a href="https://dx.doi.org/10.1186/1471-2105-10-421"
+           target="_blank"><img src="images/doi.jpg
+                                     " width="30"
+                                height="16" align="absmiddle"
+                                style="padding-left:2px"></a></li>
+    <li><a name="hhblits"></a><b>HHblits</b><br>
+        Remmert, M., Biegert, A., Hauser, A., S&ouml;ding, J. HHblits:
+        lightning-fast iterative protein sequence searching by HMM-HMM
+        alignment. Nat Methods 9, 173-175 (2012).
+        <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/22198341">
+          <img width="17" align="absmiddle" height="16"
+               src="images/pubmed.jpg
+                    "></a>
+        <a href="https://dx.doi.org/10.1038/nmeth.1818"
+           target="_blank"><img src="images/doi.jpg
+                                     " width="30"
+                                height="16" align="absmiddle"
+                                style="padding-left:2px"></a></li>
+  </ul>
+
+<h2>Table T1:</h2>
+<p>Primary amino acid sequence for which templates were searched and models were built.</p>
+<div class="sequence">SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGHSMQNCVLKLKVDTANPKTPK<br>YKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFCYMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTI<br>TVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYEPLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQC<br>SGVTFQ<br></div>
+
+
+<h2>Table T2:</h2>
+<table class="borderedTbl">
+<thead>
+	<tr>
+		<th>Template</th>
+		<th>Seq Identity</th>
+		<th>Oligo-state</th>
+		<th>QSQE</th>
+		<th>Found by</th>
+		<th>Method</th>
+		<th>Resolution</th>
+		<th>Seq Similarity</th>
+		<th>Coverage</th>
+		<th>Description</th>
+	</tr>
+</thead>
+<tbody>
+
+<tr>
+		<td>6m03.1.A</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.97</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.00&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>SARS-CoV-2 main protease</td>
+	</tr>
+<tr>
+		<td>6m03.1.B</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.97</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>2.00&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>SARS-CoV-2 main protease</td>
+	</tr>
+<tr>
+		<td>5r7z.1.B</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.93</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.59&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>SARS-CoV-2 main protease</td>
+	</tr>
+<tr>
+		<td>5ref.1.B</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.92</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.61&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>main protease</td>
+	</tr>
+<tr>
+		<td>5rep.1.B</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.91</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.81&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>main protease</td>
+	</tr>
+<tr>
+		<td>5reu.1.B</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.90</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.69&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>main protease</td>
+	</tr>
+<tr>
+		<td>5rfv.1.B</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.89</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.48&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>main protease</td>
+	</tr>
+<tr>
+		<td>6y84.1.B</td>
+		<td>100.00</td>
+		<td>homo-dimer</td>
+		<td>0.89</td>
+		<td>HHblits</td>
+		<td>X-ray</td>
+		<td>1.39&Aring;</td>
+		<td>0.62</td>
+		<td>1.00</td>
+		<td>Non-structural polyprotein 1ab</td>
+	</tr>
+</tbody>
+</table>
+
+
+<br>The table above shows the top 8 filtered templates. A further 346 templates were found which were considered to be less suitable for modelling than the filtered list.<br>
+5rfs.1.A, 5rf4.1.B, 5re4.1.B, 5re6.1.A, 2hyf.3.D, 5rea.1.B, 5nh0.1.B, 5rfb.1.A, 4wmf.2.C, 5rfw.1.A, 5rej.1.A, 5rff.1.B, 3mks.2.A, 5rej.1.B, 6p7v.1.B, 5rfo.1.A, 2gtb.1.A, 6brq.2.B, 4f49.1.A, 3f9e.1.A, 5rfj.1.A, 3vb3.1.A, 2yna.1.A, 2amp.1.A, 5r84.1.A, 5r7z.1.A, 5rf1.1.B, 5reu.1.A, 6fv1.1.A, 3c6n.1.A, 5rfa.1.A, 2liz.1.A, 5r81.1.B, 5rfo.1.B, 5reo.1.A, 5eu8.1.A, 5re7.1.A, 3f9h.1.B, 5rfu.1.B, 5rep.1.A, 5rf3.1.B, 3m3t.1.A, 4u0y.1.B, 5r81.1.A, 5rfz.1.B, 5rfv.1.A, 2vj1.1.A, 4yo9.1.B, 2k7x.1.A, 6yb7.1.A, 2v79.1.A, 6y2g.1.B, 3ea9.1.A, 4hi3.1.B, 5re7.1.B, 5gk9.1.A, 3m3s.1.A, 5rer.1.B, 5rey.1.A, 5rex.1.B, 2v79.1.B, 5rf9.1.B, 4zro.1.D, 2qiq.1.A, 5rf4.1.A, 5rfx.1.A, 5ren.1.A, 2zu2.1.A, 5rfu.1.A, 5rfq.1.B, 5red.1.A, 5rec.1.A, 5rfn.1.B, 1q2w.1.A, 6brp.2.B, 5re9.1.B, 5rfl.1.A, 5zqg.1.B, 5rfc.1.A, 5rem.1.A, 5rfa.1.B, 4yoi.1.A, 5hyo.1.B, 1lvo.2.B, 5re8.1.A, 5r82.1.A, 2l54.1.A, 5reh.1.A, 3ebn.1.A, 5zqg.1.A, 5rfh.1.A, 2vj1.1.B, 5rf2.1.A, 2bx4.1.A, 2hyf.3.B, 5c3n.1.B, 6y2f.1.B, 2heo.1.B, 5reb.1.A, 2p6t.1.E, 5hzg.2.C, 1z67.1.A, 2q6f.1.B, 2p5v.1.C, 5rez.1.A, 6y2e.1.B, 5rey.1.B, 5reo.1.B, 5res.1.A, 2hyg.1.A, 5rfp.1.A, 2f5d.1.B, 5r84.1.B, 6mak.1.A, 5rf0.1.A, 2z9j.1.A, 1q2w.1.B, 5re9.1.A, 4u0y.1.D, 5rek.1.A, 1lvo.3.B, 2z9j.1.B, 3l2o.1.A, 2duc.1.A, 5rfd.1.B, 4yxy.1.A, 5rei.1.B, 5c3n.1.A, 5rf6.1.B, 2ev6.1.B, 5rfi.1.B, 5r83.1.A, 5rf0.1.B, 5rea.1.A, 5b6o.1.B, 6y2f.1.A, 1uk3.1.A, 5rfc.1.B, 2p1n.3.A, 5ibk.1.A, 5rfg.1.B, 5rek.1.B, 5ren.1.B, 5zu1.1.B, 2qc2.1.A, 5rft.1.B, 5rfd.1.A, 2amd.1.B, 5rfm.1.A, 5red.1.B, 1qwg.1.A, 2p6t.1.G, 5rfh.1.B, 5ree.1.B, 3d62.1.A, 2p6s.1.D, 1z1i.1.A, 5reh.1.B, 5rem.1.B, 5kvr.1.A, 5rf7.1.A, 4xfq.1.B, 2heo.1.A, 5rec.1.B, 3aw1.1.B, 3ea7.1.B, 5rfr.1.A, 2hyf.3.C, 3v7d.1.A, 5rg0.1.B, 5wkj.1.A, 5rf2.1.B, 2p5v.1.A, 2q6d.1.A, 3fzd.1.A, 2ev6.1.A, 5rft.1.A, 4kmf.1.A, 2f5c.1.A, 5rf8.1.B, 3v7d.2.A, 5rev.1.B, 5rf6.1.A, 5b6o.1.A, 5rfi.1.A, 5reb.1.B, 2q6d.1.B, 3iwm.1.F, 6y84.1.A, 5hzg.1.C, 4zuh.1.B, 1nex.1.A, 1p9s.1.A, 5rfn.1.A, 5rfe.1.B, 5rf1.1.A, 3mks.3.A, 5rfs.1.B, 3iwm.1.H, 5ree.1.A, 5rew.1.B, 5r80.1.B, 6w63.1.A, 4hi3.1.A, 5rf9.1.A, 5rfb.1.B, 4mds.1.A, 5gwy.1.B, 1j75.1.A, 3f9h.1.A, 3m3v.1.B, 5rfy.1.A, 5rfk.1.B, 2p6s.1.B, 3sna.1.A, 5rfw.1.B, 4zuh.1.A, 5rex.1.A, 2ma3.1.A, 2qcy.1.A, 5rf5.1.A, 6y2e.1.A, 5rez.1.B, 6jij.2.A, 5rf8.1.A, 2op9.1.A, 6y2g.1.A, 2c3s.1.A, 4wmd.1.A, 3aw1.1.A, 5ret.1.B, 5hyo.1.A, 2p6s.1.F, 5rf5.1.B, 3e91.1.A, 5re5.1.B, 5rfx.1.B, 5zu1.1.D, 5rel.1.A, 5nh0.1.C, 6maj.1.A, 5vzu.1.A, 3iwm.1.E, 6brq.1.B, 2p5v.1.D, 4ylu.1.B, 5ref.1.A, 5zu1.1.A, 2qc2.1.B, 5rev.1.A, 3ebn.2.A, 3ogl.1.A, 5rfj.1.B, 5hyw.2.B, 5rfm.1.B, 2p1q.1.A, 4wmd.1.B, 5ibk.2.B, 5re8.1.B, 2a5i.1.A, 5gwz.1.A, 2f5e.1.A, 2xvc.1.A, 5rer.1.A, 3c6o.1.A, 4ylu.1.A, 2q6d.2.A, 5r80.1.A, 5rei.1.A, 1wi9.1.A, 5v4b.1.A, 2hyf.3.A, 5zu1.1.C, 6bro.2.B, 3d23.1.A, 3tlo.1.B, 6lu7.1.B, 5rel.1.B, 1uj1.1.B, 2a5k.1.A, 1fqv.1.B, 3d23.1.C, 5rfr.1.B, 5rfp.1.B, 1lvo.2.A, 5gwy.1.A, 6lu7.1.A, 5rfz.1.A, 5re5.1.A, 4wme.1.A, 5rfy.1.B, 5r83.1.B, 2p6t.1.H, 6w63.1.B, 2pwx.1.A, 5rfk.1.A, 4tww.1.B, 5rew.1.A, 3f9g.1.A, 5ret.1.A, 3f9g.1.B, 5rf7.1.B, 3tlo.1.A, 6brp.1.B, 2q6g.1.B, 6jij.1.A, 5rg0.1.A, 2amd.1.A, 2ovr.1.A, 4yog.1.B, 2op9.1.B, 4zro.1.A, 5nh0.1.A, 4zro.1.C, 5r7y.1.A, 1lvo.1.A, 5rfe.1.A, 5rf3.1.A, 5r7y.1.B, 2alv.1.A, 1z1j.1.A, 1uk3.1.B, 4zro.1.B, 2gt8.1.A, 4u0y.1.A, 5rfq.1.A, 3c6p.1.A, 5re4.1.A, 2q6g.1.A, 5res.1.B, 5re6.1.B, 4rsp.2.A, 5reg.1.B, 2bx3.1.B, 5r82.1.B, 3ea8.1.A, 1lvo.1.B, 3iwm.1.G, 1z1j.1.B, 5rfl.1.B, 4xfq.1.A, 5hyw.1.B, 5rff.1.A, 5reg.1.A, 5rfg.1.A, 3m3v.1.A
+ 
+
+
+	</div>
+	
+  <div id="sib_footer">			
+   <div id="sib_footer_content"> 
+       <a href="https://www.sib.swiss">Swiss Institute of Bioinformatics</a>
+       <a href="mailto:help-swissmodel@unibas.ch" style="margin-left:16px;">Contact Us</a>
+      <div id="sib_footer_right" style="float:right"></div>
+  	</div>
+	</div>
+  
+  <script src="js/svgtocanvas.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script> 
+  <script src="js/qmean.min.js"></script>
+  <script src="js/raphael-min.js"></script>
+  <script>
+ var localQMEANNormImage='images/qmean_norm.png';
+ var modelData = {
+   
+      "02":{
+        'qmean_local' : { 
+        "A":[0.6476464725,0.5570225144,0.7714077972,0.7668038386,0.8143701553,0.8366644586,0.9019691605,0.8920735658,0.8906984013,0.8964188735,0.8563273847,0.8461593788,0.9184672277,0.8823728762,0.9114525488,0.9664966794,0.9401528986,0.9726686386,0.9242613012,0.9691360976,0.9581727563,0.9622149919,0.9222614166,0.9312041607,0.9278825879,0.9498852019,0.9550993991,0.9568276803,0.9899057202,0.9801052156,0.935451048,0.9591557025,0.9330718745,0.9258055901,0.954422142,0.9765318878,0.983241646,0.9946833992,1.0,0.9107407757,0.913607154,0.9481972507,0.9423572546,0.9448925267,0.8853479534,0.8075888168,0.7656999892,0.8799412191,0.8618997644,0.8525767528,0.8363060014,0.9279211435,0.8782713833,0.915106775,0.8528178648,0.8747417759,0.8912212898,0.897237441,0.8721815885,0.8143247867,0.8648974451,0.9074267751,0.908261195,0.8835514314,0.9100591913,0.9426193667,0.9346859281,0.9526645975,0.8875197637,0.9255119851,0.8680839433,0.747977993,0.793787136,0.8551512584,0.9075721312,0.8476722179,0.9354220817,0.932868226,0.93200666,0.8961883584,0.9139199727,0.9171155249,0.9250127866,0.9588723315,1.0,0.9849537347,0.9610545093,0.9151281415,0.9410473937,0.8996154307,0.9370354094,0.8975374847,0.9061295308,0.9191593495,0.9135053852,0.9223171518,0.854932519,0.9424438549,0.9462251304,0.9100280055,0.9492141189,0.9228478204,0.9607580004,0.9734029893,0.9178524495,0.9547695594,0.9074940615,0.9778689279,0.9717663775,0.9360735053,0.9497317568,0.9431254082,0.9216093714,0.9316617384,0.9170955957,0.9176079099,0.895671342,0.8666121387,0.8915223901,0.9380172603,0.8790590976,0.8924948154,0.8307964736,0.8536121402,0.892925229,0.8661045887,0.8618872407,0.8581380145,0.9430057574,0.9619151675,0.9087494618,0.9716372655,0.9215791948,0.9746044202,0.97398587,0.9258614894,0.8114158516,0.8437914534,0.8085215306,0.7728221307,0.7316326288,0.7058517201,0.8281938843,0.878218733,0.9292113079,0.9677383527,0.9499017329,0.9787424178,0.9721327522,0.9597719654,0.9175860497,0.8786080925,0.8353056208,0.7381557277,0.7753498645,0.9683628561,0.9483088337,0.9586717412,0.9750907185,0.9973084476,0.9804810471,0.9710463981,0.9368128051,0.9313105487,0.8965729791,0.8307247448,0.8498086786,0.8051778964,0.7829021515,0.8143784012,0.8685602795,0.888610644,0.9668427706,0.9881197358,1.0,0.9924076823,0.9815890259,0.9458290264,0.999313116,0.9752847886,0.987262819,0.9783456182,0.9778825277,0.9608056817,0.9534807593,0.945409103,0.9344531094,0.8172207885,0.7990884678,0.7904206707,0.711697824,0.772594405,0.7932564647,0.8286569986,0.8383950897,0.8362655311,0.8705152063,0.9208584211,0.9483724528,0.9645246197,0.9840742548,0.9597417314,0.9448283693,0.9612214265,0.9745807127,0.9659159958,0.9152700958,0.9531362315,0.9239113194,0.9215177501,0.9172515362,0.8860362684,0.8267815477,0.8186867783,0.8317832559,0.8469541492,0.8380134342,0.8251173563,0.9439127449,0.9160299183,0.8480705967,0.7734072795,0.8708864162,0.8949969331,0.9211192069,0.8977739141,0.9027971489,0.8755391964,0.9029168352,0.9377069509,0.8918151482,0.9098793623,0.9239634203,0.9111449387,0.8499889962,0.8376275308,0.8900013619,0.8808976594,0.9436661954,0.9018970003,0.9476664824,0.9435736421,0.9069867844,0.8647137718,0.8812077121,0.8508333431,0.8976384266,0.9016888416,0.9225986786,0.934877649,0.9186192433,0.8852364875,0.8902484567,0.8897716306,0.8617855643,0.8060555606,0.8659296632,0.8923904909,0.90470327,0.9409934381,0.9556273871,0.9371901834,0.9426594835,0.939093104,0.973008816,0.9558195516,0.9621513911,0.9620804357,0.908683402,0.9030437239,0.9275812793,0.938057202,0.8865675726,0.9043605229,0.897636989,0.8538531258,0.8413804396,0.8508282139,0.806728799,0.8569333824,0.8925617052,0.8487868396,0.7713703357,0.7915169165,0.8304032509,0.8194472119,0.8785314716,0.86989964,0.9386573327,0.8927439094,0.9303737847,0.9520459103,0.9582650577,0.8866751463,0.8678144754,0.9094694517,0.8762621783,0.7435920208,0.7256398699,0.7204663443,0.6301058488,0.5511678736,0.5389262208,0.4969049131,0.4500431324,0.4987738457] ,
+        "B":[0.6476458843,0.5570220537,0.7714076292,0.7668038066,0.8143698309,0.8366659614,0.9019699186,0.8920736389,0.8906983195,0.8964188579,0.8563273859,0.8461594465,0.9184672965,0.882372826,0.9114526512,0.9664968085,0.940152719,0.9726685735,0.9242613383,0.9691360631,0.9581728231,0.9622149479,0.922261266,0.9312041779,0.9278826527,0.9498853498,0.9550993915,0.9568276124,0.9899056134,0.9801052254,0.9354510417,0.9591556602,0.9330718866,0.9258054523,0.9544222198,0.9765319531,0.983241674,0.9946834043,1.0,0.9107407219,0.9136071428,0.9481974603,0.9423573536,0.9448924042,0.8853482147,0.8075887719,0.7657002382,0.8799412718,0.861899765,0.8525768874,0.8363060447,0.927921099,0.8782715086,0.9151067796,0.8528177472,0.874741815,0.8912212919,0.8972374867,0.8721815132,0.8143248102,0.8648972955,0.9074267854,0.9082610803,0.8835514623,0.9100590963,0.942619296,0.9346860358,0.9526645747,0.8875198404,0.9255119016,0.8680839867,0.747977801,0.7937872635,0.8551511553,0.9075721673,0.8476724049,0.9354220811,0.9328682651,0.9320065269,0.8961882304,0.9139203311,0.9171154719,0.9250128811,0.9588723366,1.0,0.9849537176,0.9610548802,0.9151279734,0.9410474219,0.8996154608,0.9370354319,0.8975373988,0.9061293882,0.9191593589,0.9135054518,0.9223170697,0.854932443,0.9424437791,0.9462252414,0.9100281798,0.9492140647,0.9228478506,0.9607579675,0.973403019,0.9178524942,0.9547696178,0.907493281,0.9778696688,0.9717664858,0.9360771355,0.9497332835,0.9431241609,0.9216093248,0.9316605115,0.9170955956,0.9176079739,0.8956713177,0.8666122384,0.8915223656,0.9380171515,0.8790591061,0.8924947794,0.8307963862,0.8536121471,0.8929251814,0.8661050132,0.8618878725,0.8581373669,0.9430052337,0.961916919,0.9087498412,0.9716360208,0.9215796457,0.9746043297,0.9739866907,0.9258636928,0.8114156876,0.8437909696,0.8085191895,0.7728215982,0.7316291227,0.7058516504,0.8281939989,0.8782188202,0.9292111171,0.9677384721,0.949901873,0.9787425313,0.9721321483,0.9597711234,0.917586202,0.8786081267,0.8353025953,0.7381557531,0.7753499285,0.9683629762,0.9483088894,0.9586717604,0.9750903876,0.9973073762,0.9804810732,0.9710463974,0.9368127589,0.9313105599,0.8965733475,0.8307246957,0.8498100905,0.8051759911,0.7828730465,0.8143821688,0.8685608527,0.8886107738,0.9668428286,0.988119534,1.0,0.9924067472,0.9815891439,0.9458291736,0.9993131943,0.9752847934,0.987263034,0.9783450855,0.9778828413,0.960805693,0.9534809806,0.945409137,0.9344530021,0.8172209381,0.7990869524,0.7904186977,0.7116880315,0.7725890958,0.7932567443,0.8286599921,0.8383983771,0.8362662486,0.8705139816,0.9208587481,0.9483728871,0.9645244799,0.9840739326,0.9597451193,0.9448279222,0.9612213593,0.974581947,0.9659176172,0.9152701884,0.9531360583,0.9239115163,0.921517824,0.917251314,0.8860361114,0.8267813342,0.8186859731,0.8317827299,0.8469535053,0.838013137,0.8251171712,0.9439127288,0.9160298705,0.8480705754,0.7734073773,0.8708863522,0.8949970038,0.921119307,0.8977738719,0.9027969212,0.8755392784,0.9029169306,0.9377069302,0.8918151509,0.9098792314,0.92396355,0.9111451494,0.8499887466,0.837627396,0.8900013866,0.8808976422,0.943666162,0.9018976094,0.9476663147,0.9435735485,0.9069867564,0.8647136149,0.881211906,0.8508358641,0.8976385182,0.9016887284,0.9226034309,0.934878349,0.9186192325,0.8852364872,0.8902485046,0.8897714051,0.8617855844,0.8060554417,0.8659296382,0.8923905268,0.9047034104,0.9409934012,0.9556274346,0.9371901725,0.9426595412,0.9390932084,0.973008894,0.9558194993,0.9621514832,0.9620804123,0.9086833542,0.9030435519,0.9275811865,0.9380573379,0.8865676412,0.9043605674,0.8976370683,0.8538532675,0.8413805633,0.8508282954,0.8067287783,0.8569334178,0.8925615604,0.8487858052,0.771369969,0.7915168995,0.8304032622,0.8194472594,0.8785315521,0.8699012595,0.9386570916,0.8927471227,0.9303738766,0.9520445017,0.9582659274,0.8866738753,0.86781459,0.9094688542,0.8762626021,0.7435924159,0.7256395338,0.7204667214,0.6301058082,0.5511678731,0.5389262583,0.4969049431,0.450042799,0.4987738964] },
+        'qmean_global':{"interaction_norm_score":-0.0188653231,"qmean6_z_score":0.1925338592,"torsion_z_score":0.8069720665,"ss_agreement_z_score":-0.1582435115,"acc_agreement_norm_score":0.6699346405,"cbeta_norm_score":-0.0112231376,"packing_z_score":-0.640654122,"qmean6_norm_score":0.7776320561,"qmean4_z_score":0.5821343388,"qmean4_norm_score":0.7839425191,"interaction_z_score":-0.4546201126,"ss_agreement_norm_score":0.5935853346,"avg_local_score":0.8917011892,"torsion_norm_score":-0.3988731751,"packing_norm_score":-0.3242852004,"cbeta_z_score":-0.10742352,"acc_agreement_z_score":-0.4465928682,"avg_local_score_error":0.053}
+      },
+    
+      "01":{
+        'qmean_local' : { 
+        "A":[0.6062790774,0.5732423538,0.7693442806,0.7654832135,0.7949633381,0.8274658941,0.9053316213,0.8913211126,0.8845468445,0.8916782601,0.8525741555,0.8283897558,0.9006977403,0.86943229,0.8930790795,0.9453014255,0.9333982902,0.9599046029,0.9078807055,0.9552954068,0.9450621921,0.9263053135,0.879719421,0.8600669821,0.9041608517,0.9238993106,0.9280864965,0.9289542462,0.9866688392,0.9712674558,0.9261618378,0.9558668939,0.9398495811,0.9366157892,0.9635868249,0.9742117489,0.9759488446,0.9856293187,0.9987128924,0.8896498637,0.8944654994,0.9250698948,0.9172804698,0.9296477806,0.8501477465,0.8003910624,0.7704721422,0.8660074552,0.8229732264,0.787445772,0.8431494427,0.9468219001,0.8913085259,0.9275456975,0.8669648546,0.8917023737,0.900555753,0.8835580747,0.8453133412,0.7717988443,0.8220824992,0.8478558732,0.8743921787,0.8391473362,0.8273915343,0.925267335,0.9046764312,0.9357454977,0.8815864196,0.9217406851,0.8532227471,0.736189198,0.803368257,0.8481602556,0.905735718,0.851178713,0.9362059869,0.9288113274,0.9169160477,0.872492845,0.9061766514,0.9125697857,0.9055094152,0.9524881476,0.9937136966,0.9674400682,0.946422841,0.9217224857,0.9472787122,0.9051999701,0.9452298503,0.91617786,0.9220488025,0.9236430226,0.9087844807,0.9259211751,0.8329215985,0.9420073931,0.9422327544,0.9112022745,0.9358173095,0.9091943735,0.9605163555,0.9626579095,0.9213512874,0.9497030865,0.9064462832,0.9689026023,0.9471684441,0.9313454543,0.9560533229,0.9472741351,0.9271154616,0.9301199519,0.9136956159,0.9074409848,0.8910590963,0.8453788515,0.8432259314,0.9025613258,0.8547276806,0.8780361596,0.8177927043,0.8444049436,0.8754310673,0.8731385217,0.8614055112,0.8822104119,0.9467728666,0.9530304029,0.9032509959,0.9728170462,0.925115115,0.9761864113,0.9770999401,0.924976481,0.8251229103,0.8470528854,0.8063609399,0.7645107025,0.7229766023,0.6833486333,0.8040716956,0.8749016151,0.9228097582,0.9705131166,0.9331516015,0.9767715086,0.975250364,0.9616561386,0.9267749662,0.874661125,0.8544119738,0.7099422236,0.7442638134,0.9592714779,0.9445589978,0.9614282678,0.9768447377,0.992640523,0.9703556575,0.9621695822,0.9322114448,0.9061574928,0.8789016665,0.8328760925,0.8294791448,0.7853726583,0.7823327747,0.8227092662,0.8794552774,0.8947211913,0.9539314807,0.984204253,0.9985698316,0.9845205742,0.9813247111,0.9429112465,0.9969113934,0.9741910382,0.9852943827,0.9701051074,0.9805870549,0.9694354994,0.9367115559,0.9211807974,0.9015571845,0.7812996561,0.762217232,0.7399921968,0.7011549858,0.7639994723,0.8245255179,0.8587855104,0.8593013387,0.8279628639,0.8474778639,0.923539636,0.948677239,0.9613078969,0.9792758648,0.9540335832,0.9356620081,0.9607451326,0.9661800587,0.9738842995,0.9113903166,0.9554278735,0.9409556709,0.9434818951,0.9173075205,0.8999814621,0.8850381177,0.8429987666,0.8371107036,0.7635062345,0.7370477866,0.7284780531,0.8872875762,0.877303501,0.8048884051,0.7413318226,0.8620137631,0.8924084368,0.9029906284,0.8787328685,0.8911883959,0.879459868,0.881460211,0.9277172745,0.8919997011,0.8791213218,0.8485465701,0.904648543,0.8695434702,0.8150826078,0.8549997877,0.8608591462,0.9241517031,0.9092848592,0.9276342176,0.9470766789,0.9110569948,0.8543367976,0.8789031335,0.8417224783,0.8951503312,0.8889052279,0.9075601291,0.9473216454,0.931017283,0.9248447885,0.9266742452,0.9152291526,0.908580382,0.8573680161,0.9170212672,0.9250656221,0.9178089239,0.9335626878,0.9538010311,0.9314472964,0.9321158927,0.9339834157,0.9611953179,0.9496755985,0.9544020394,0.9489478612,0.8898075879,0.8623530993,0.8884912565,0.8720946422,0.7635644811,0.8012342552,0.8283705303,0.819141183,0.8284286123,0.8187245382,0.7812719147,0.796074913,0.8351051456,0.7891052239,0.7326889875,0.7680265516,0.8330269001,0.8146272695,0.8432659971,0.8555253752,0.9293372094,0.8873847049,0.9214571373,0.9421783436,0.9458312129,0.8686599767,0.8730121931,0.9028032442,0.8731517191,0.7644593785,0.7871513998,0.773125197,0.6954337766,null,null,null,null,null] ,
+        "B":[0.5979075686,0.5462780873,0.7456668275,0.7670734031,0.798311921,0.8288409592,0.9020169143,0.878399107,0.881054864,0.8880676538,0.8486978382,0.8357173193,0.9029387552,0.8697581069,0.8925846521,0.9508892137,0.9319876687,0.9537487407,0.9065108949,0.9500953685,0.9466348236,0.9468227324,0.8989849256,0.8702236765,0.9167649439,0.9150415054,0.9273470437,0.9363278042,0.9849584484,0.9755592237,0.9298110703,0.9574668207,0.9326611717,0.9338857915,0.9666405312,0.9752027409,0.9708174503,0.9846491703,0.9954665421,0.8888611653,0.893499312,0.9301677773,0.9255497162,0.9292790036,0.8546000488,0.7793302912,0.7873303606,0.858520436,0.8361374961,0.8239980713,0.8209604386,0.9295530134,0.8677504019,0.9186309908,0.8550391753,0.8613874031,0.9009576177,0.8900217197,0.8382170409,0.7765244118,0.8518159815,0.9024061175,0.8948609746,0.8615008563,0.8829181575,0.9380193991,0.9226597501,0.9392169647,0.8834128662,0.9138148033,0.8504183184,0.7778935199,0.7992719145,0.8545128674,0.9183378343,0.8601721913,0.9466373799,0.9441785048,0.9464226228,0.8997459654,0.9224763655,0.9125299113,0.9119005022,0.9493794782,0.9900713063,0.9622166143,0.9510729356,0.9212434903,0.9504149579,0.9111556326,0.9554284775,0.9205977086,0.923486956,0.923327691,0.9061455342,0.9234261397,0.8392520334,0.9416797782,0.9452465934,0.9091623894,0.9344085619,0.9034804723,0.9568038891,0.9683782451,0.9210395639,0.9628698853,0.9062623752,0.9689320007,0.9624618604,0.9173970635,0.9473123608,0.9426609483,0.927053579,0.9295488666,0.9154114924,0.9208364483,0.8938258118,0.8570330045,0.8474538268,0.9071987749,0.8632413026,0.8889611529,0.8370555404,0.8556919462,0.8794617257,0.8720882862,0.8614579369,0.8751567167,0.9431573511,0.9529110886,0.8956619508,0.9747592384,0.921379703,0.9748299262,0.9460295924,0.9100653673,0.8026353846,0.8438650572,0.806653934,0.759706026,0.7245072876,0.6898454968,0.8066162335,0.8851546321,0.9349002817,0.9771294379,0.9471650515,0.9751721321,0.9780275961,0.9612476903,0.9193228748,0.8759720277,0.8702014955,0.7327941279,0.7660126956,0.9658567372,0.944168508,0.9603370091,0.9769943062,0.9980814529,0.973032294,0.9652897445,0.9306442776,0.9066554381,0.8642888575,0.7967009684,0.7987960243,0.7563766859,0.7793264916,0.820918866,0.8677034194,0.8649381547,0.9424009229,0.9803576828,0.9988869347,0.9876356523,0.965031428,0.9408179548,0.99736108,0.9718023008,0.9828533809,0.9711472076,0.9745947728,0.9651390911,0.9252030097,0.9011120021,0.8896537205,0.7574798251,0.704092707,0.736266501,0.6752457826,0.7536431858,0.8139393399,0.8311887441,0.8412930064,0.8131319237,0.8322380002,0.9101787886,0.948074569,0.9577160794,0.9673932808,0.951587182,0.9328694086,0.9525435777,0.9632298099,0.9608781434,0.9029513595,0.9432794223,0.9204116444,0.9058165284,0.9085347905,0.9222241164,0.8383820949,0.808809195,0.8829753474,0.8467844434,0.7318852552,0.5733685964,0.7807390092,0.8080271052,0.6745240107,0.6051866715,0.6885863954,0.7290712858,0.8772107997,0.8987571617,0.8685876712,0.8310953032,0.8592796452,0.9108917478,0.8609220678,0.8711796163,0.8848544554,0.8661912821,0.8100105161,0.8263435247,0.8609028183,0.8659857476,0.9208631666,0.9009755737,0.9122932768,0.931137751,0.8983287229,0.8382807515,0.8761330252,0.8315731101,0.8852257846,0.8857452569,0.8967465169,0.9110297876,0.9219266317,0.9173791004,0.8755446033,0.8789305324,0.9054936078,0.8194886827,0.8690778731,0.8564515451,0.8736258782,0.8665076355,0.9130689096,0.8959047743,0.917925362,0.917799212,0.942224864,0.924520499,0.9379527687,0.9332939006,0.8673758082,0.8235653946,0.8545173016,0.9046692527,0.8319176808,0.8036070421,0.8220829498,0.6580505041,0.5952227836,0.6025197304,0.6025864582,0.8306904771,0.8681279625,0.824893344,0.7685983997,0.776705922,0.7889389238,0.7893107202,0.859994736,0.8556140354,0.9298347347,0.8817827359,0.9156475684,0.9270150133,0.9212671204,0.8257139802,0.8448459614,0.8729916502,0.8155176476,0.7016633293,0.7404598933,0.6624324421,0.6314531527,0.4957450625,0.5899804906,null,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0189595505,"qmean6_z_score":0.1267142084,"torsion_z_score":0.8314449223,"torsion_norm_score":-0.4014770923,"ss_agreement_z_score":-0.1716678656,"acc_agreement_norm_score":0.6804635762,"cbeta_norm_score":-0.008987279,"packing_z_score":-0.7591553407,"packing_norm_score":-0.3183926092,"qmean4_z_score":0.446533212,"interaction_z_score":-0.4306273295,"ss_agreement_norm_score":0.5922868546,"avg_local_score":0.8819651037,"cbeta_z_score":-0.8884476479,"qmean6_norm_score":0.7747648004,"qmean4_norm_score":0.7791981851,"acc_agreement_z_score":-0.3552674467,"avg_local_score_error":0.053}
+      },
+    
+      "04":{
+        'qmean_local' : { 
+        "A":[0.6164375346,0.5805402504,0.7740792291,0.7671557392,0.8116996152,0.8279834787,0.9007498514,0.8839098149,0.8749888187,0.885739821,0.8547633866,0.8366748543,0.9143999968,0.8727946503,0.9087712948,0.9610157659,0.9419546732,0.9685097104,0.9189063068,0.9614079393,0.9480436432,0.9490394018,0.9139582439,0.9091324087,0.9221223318,0.937280171,0.9387323535,0.93948847,0.9891326472,0.9740832368,0.9334459003,0.9570474543,0.9312285449,0.9311202067,0.9618940006,0.976712176,0.9808422245,0.9933405231,1.0,0.8929091899,0.8922023259,0.9344103906,0.9221066543,0.9203913799,0.8314425545,0.7183643081,0.5956596764,0.5792923886,0.7831725312,0.8080936114,0.8382980546,0.920195893,0.8747427602,0.9009447012,0.8462108754,0.8833259061,0.8848273218,0.8824323676,0.862921894,0.8086649025,0.8528215583,0.900808223,0.8959215399,0.8651984382,0.8959957733,0.9380963589,0.8979563169,0.9401798588,0.8864140806,0.9229565577,0.8329367045,0.7376642825,0.8334064447,0.8582355996,0.9064378894,0.8422122104,0.9284425623,0.9239601121,0.925459266,0.8952616393,0.9239365799,0.9117476257,0.9154667292,0.9590016407,0.999360403,0.9859884565,0.9601402336,0.9154907826,0.9459232869,0.8944761246,0.9259815362,0.8831120206,0.9049012293,0.9166758063,0.9081613971,0.9093644503,0.8371421933,0.936404694,0.9313102996,0.8891279402,0.9276330876,0.8995864016,0.9573533437,0.970437809,0.9242629631,0.9528966096,0.9189929785,0.9786592413,0.9744123748,0.9355330903,0.9551269554,0.9459233514,0.9204044786,0.9290183451,0.9128130916,0.9118163337,0.8891414642,0.8385493157,0.8690362201,0.9268756553,0.868103401,0.885493881,0.831849973,0.8435841047,0.8713505565,0.8586457746,0.8581413686,0.9037652188,0.9481847402,0.9523490519,0.9028911065,0.9823418404,0.9317467479,0.9733351061,0.9754005844,0.9227642265,0.8303179394,0.8450176402,0.8059842814,0.748019571,0.7070813269,0.6862920628,0.8073935162,0.8807344507,0.9316834273,0.9752881876,0.934457378,0.9743900793,0.9700251415,0.9599268101,0.9163358526,0.8601970891,0.8326004444,0.6698546005,0.7515667903,0.9252320541,0.9293898021,0.9518080793,0.9716721824,0.9977826319,0.9818684742,0.9649184697,0.9308735885,0.9154788541,0.8856836204,0.842240928,0.8444834123,0.8078706921,0.7867021137,0.8360101776,0.8840283323,0.9056930942,0.9683732465,0.9917097587,1.0,0.9934817343,0.9839886847,0.9453376879,0.9973931337,0.9789883136,0.9890759133,0.9818447848,0.9760973563,0.9614155231,0.9398031454,0.9349072758,0.9175910343,0.7861984659,0.784651838,0.7141527988,0.7113816113,0.7754302971,0.8214420737,0.8413621346,0.8527686009,0.8353746373,0.874357971,0.9199538221,0.9408855785,0.9514647068,0.975370979,0.9747802955,0.9372211946,0.948982909,0.9671131876,0.9720003541,0.8984171191,0.9488154798,0.9217414117,0.9020919391,0.8902756868,0.8760386331,0.826568515,0.7511081705,0.7574726677,0.7516964656,0.7603476042,0.8056826776,0.9264186835,0.9086419188,0.8294844062,0.7520664404,0.8722616966,0.9051579565,0.9239589462,0.9110831917,0.9092007075,0.8800508056,0.9127890189,0.9418878646,0.8921834005,0.9096568172,0.919198536,0.8944795165,0.8091731786,0.8286534681,0.8627430499,0.8646917124,0.9187881068,0.8920709421,0.9347385765,0.9369299274,0.9085337997,0.8648025866,0.8948548401,0.8600717299,0.90573761,0.9034195234,0.9103280011,0.9473302308,0.9181919321,0.8973292115,0.8870225119,0.8994813753,0.876712469,0.8119138057,0.8713279188,0.9034135897,0.9067914118,0.9225241908,0.9578473261,0.937941574,0.9359572249,0.9344293351,0.9641570222,0.9465526065,0.9532320739,0.9468281761,0.9037846602,0.8803989451,0.9203777253,0.9151738346,0.8628703556,0.8570013755,0.8668166851,0.8005096077,0.6354773296,0.685250821,0.7466886771,0.803423673,0.8659520616,0.8035557049,0.7394089448,0.7445143425,0.7391265027,0.7243805557,0.8202836779,0.8479974682,0.9221207109,0.876454353,0.9156247074,0.943421571,0.9443404072,0.8695255582,0.8636817459,0.8831112011,0.8482559315,0.7339342093,0.7581149456,0.7270277118,0.5175129279,0.5836757845,0.516563263,0.5533686101,0.4932850942,0.5155665383] ,
+        "B":[0.6164343197,0.5805395282,0.7740438414,0.7671551058,0.8116989095,0.8279832849,0.9007498282,0.8839097477,0.874988744,0.8857398779,0.8547633811,0.8366748607,0.9143999711,0.8727948435,0.9087716028,0.961015942,0.9419548559,0.9685144671,0.9189092066,0.9614152656,0.9480434107,0.9490468767,0.9139596402,0.9091323918,0.9221223925,0.9372809641,0.9387329225,0.9394893098,0.9891322396,0.9740837247,0.9334446202,0.9570478089,0.9312292824,0.9311184827,0.9618901943,0.9767128848,0.9808439131,0.9933408905,1.0,0.8929091449,0.8922023141,0.9344109169,0.9221063837,0.9203913842,0.8314427229,0.7183639841,0.5956592344,0.5792922684,0.7831723517,0.8080935934,0.838297922,0.9201958432,0.8747428622,0.9009449595,0.8462108764,0.8833259975,0.8848267212,0.8824321637,0.8629164662,0.8086751154,0.8528551504,0.9007909417,0.895872786,0.8651742095,0.895971569,0.9380821346,0.8979704421,0.9401855367,0.8864126937,0.9229492851,0.8329501639,0.7376642912,0.8333492856,0.8582113325,0.9064326041,0.8421834948,0.9284291053,0.9239310444,0.9254193147,0.8952448561,0.9239449596,0.9117452516,0.9154666542,0.9590017206,0.9993604575,0.9859884628,0.9601392152,0.9154883803,0.9459063382,0.8944696203,0.9259644509,0.8830961622,0.9048952765,0.9166755724,0.9081604671,0.9093638491,0.8371421925,0.936404603,0.9313102185,0.8891279578,0.927633048,0.8995864265,0.9573534233,0.9704379064,0.9242630439,0.9528968532,0.9189929226,0.9786592895,0.9744123269,0.9355331173,0.9551268959,0.9459233415,0.920404487,0.9290185368,0.9128133503,0.9118171324,0.8891426227,0.8385520731,0.8690374358,0.9268767637,0.8681057119,0.8854949262,0.8318503129,0.8435841502,0.8713505694,0.8586457815,0.8581411091,0.9037655441,0.9481847093,0.9523491022,0.9028909878,0.9823418457,0.9317467379,0.9733351557,0.975400613,0.9227643184,0.8303203941,0.84502195,0.8059868759,0.7480255145,0.7070873564,0.686296281,0.8073974612,0.8807362502,0.931683978,0.9752881652,0.9344575409,0.9743899623,0.9700251259,0.9599270338,0.9163358444,0.8601971505,0.8326005173,0.6698543378,0.751566765,0.9252319903,0.9293897744,0.9518081655,0.9716721837,0.9977825274,0.9818686005,0.9649183521,0.9308738913,0.9154791482,0.8856837521,0.8422411179,0.844483613,0.8078706781,0.7867026473,0.8360130855,0.8840294816,0.9056933862,0.9683731919,0.9917099989,1.0,0.9934818777,0.9839887481,0.9453376888,0.9973930272,0.9789883646,0.9890759409,0.9818448108,0.9760973975,0.9614154352,0.9398029971,0.9349073094,0.9175907441,0.786198316,0.7846516102,0.7141527415,0.7113815875,0.7754302032,0.8214423295,0.8413624109,0.8527686018,0.8353744516,0.8743580686,0.9199538928,0.9408856433,0.9514645876,0.9753709564,0.9747802877,0.9372218201,0.9489823572,0.9671139237,0.971998932,0.8984146371,0.9488170218,0.9217408678,0.9020874609,0.890273404,0.876035855,0.8265658473,0.7511030389,0.757472214,0.7516983671,0.7603480232,0.8056826142,0.9264186869,0.9086419147,0.8294843644,0.7520665106,0.8722617207,0.9051580291,0.9239589183,0.9110831994,0.9092007226,0.8800508209,0.9127891167,0.9418878541,0.8921833849,0.9096569333,0.9191983434,0.8944795272,0.8091734442,0.8286533643,0.8627431415,0.864691705,0.9187881756,0.8920708251,0.9347385243,0.936929916,0.9085339152,0.8648025173,0.8948547542,0.860071744,0.905737627,0.9034195073,0.9103280187,0.9473301808,0.9181919571,0.8973291931,0.8870226104,0.8994815122,0.8767124955,0.8119138456,0.8713278737,0.9034136911,0.9067914027,0.9225242437,0.9578474151,0.9379414918,0.9359572438,0.934429341,0.9641569178,0.9465525524,0.9532320925,0.9468280341,0.9037846516,0.8803990048,0.9203777108,0.9151737958,0.8628703901,0.8570013849,0.8668167005,0.8005096016,0.6354770908,0.6852507992,0.746688655,0.803423622,0.8659515899,0.803552319,0.7394068468,0.7445135702,0.7391260985,0.7243804433,0.8202846221,0.8479980259,0.922121944,0.8764534727,0.9156236862,0.9434179247,0.9443368156,0.8695217664,0.863677415,0.8831067551,0.8482503589,0.7339312393,0.7581110765,0.7270109839,0.5174997029,0.5836715372,0.5165626245,0.5533675338,0.4932867442,0.5155666746] },
+        'qmean_global':{"interaction_norm_score":-0.0183071647,"qmean6_z_score":-0.1992849981,"torsion_z_score":0.4066757572,"ss_agreement_z_score":-0.240076655,"acc_agreement_norm_score":0.6699346405,"cbeta_norm_score":-0.0103049647,"packing_z_score":-0.9004892549,"qmean6_norm_score":0.7605635235,"qmean4_z_score":0.0330043552,"qmean4_norm_score":0.7647298761,"interaction_z_score":-0.5967418459,"ss_agreement_norm_score":0.5856699663,"avg_local_score":0.8798291341,"torsion_norm_score":-0.35628156,"packing_norm_score":-0.3113646394,"cbeta_z_score":-0.4281572095,"acc_agreement_z_score":-0.4465928682,"avg_local_score_error":0.053}
+      },
+    
+      "03":{
+        'qmean_local' : { 
+        "A":[0.626783596,0.5798984297,0.7834263145,0.7636819752,0.8112688344,0.8149045279,0.8957210485,0.8827481,0.8752372712,0.8893907106,0.8452935789,0.8335640403,0.9091569486,0.8722513644,0.9016093896,0.9602892298,0.9369189157,0.9688439397,0.917383824,0.9627237007,0.9437116013,0.9525338916,0.8989704786,0.8890339321,0.915392748,0.9321747438,0.9466562744,0.9395661867,0.9860606625,0.9764762756,0.9336001808,0.9504209694,0.9310085774,0.9259336669,0.9527839514,0.9721365282,0.9780940312,0.9952330173,1.0,0.9114947308,0.9195075927,0.948339254,0.9373582011,0.9515211277,0.8567619519,0.7955676546,0.7745533966,0.8754519547,0.8577828953,0.851208427,0.8572102654,0.9348776716,0.8913253642,0.9179995937,0.858570555,0.885341604,0.8936671903,0.8979715328,0.8827006722,0.8272331901,0.862116393,0.9089992147,0.8948539536,0.8715987382,0.8961106339,0.9408629887,0.9245376076,0.9465538097,0.8873278898,0.9190331525,0.8678700048,0.8040464364,0.8141931367,0.8586944756,0.904249269,0.8481458312,0.9325972764,0.9316745338,0.9299726156,0.8902629299,0.9122778744,0.8939965158,0.8935664375,0.9412950296,0.9997607007,0.9823635977,0.9499725977,0.9017950479,0.9357037021,0.8938402831,0.9405084742,0.9042952361,0.9003203228,0.9084391329,0.9011678608,0.9036016092,0.8349422393,0.9354220865,0.9429691042,0.902120076,0.9329785589,0.8940268395,0.9533286508,0.9704831707,0.9288634982,0.9632665573,0.9252063116,0.9812737417,0.9712284357,0.9418145548,0.9623872883,0.9539384252,0.9182401741,0.9269631823,0.9064726648,0.9053489014,0.8854500014,0.8697268713,0.8723869675,0.9264179024,0.8679457958,0.8691891663,0.8076677464,0.8183298876,0.8572099317,0.8516451452,0.8581686891,0.9028870026,0.9522752241,0.9625808725,0.9165926536,0.983025829,0.9358287499,0.9771024379,0.9726391689,0.9221409456,0.8113197137,0.8195451046,0.7503977768,0.7325171479,0.7168935581,0.7005821095,0.8175045521,0.8814543647,0.9380306903,0.9755947989,0.9410047572,0.9827474481,0.9748861512,0.9655242294,0.9242276536,0.8704229641,0.8549897039,0.702837545,0.7459671273,0.9516249235,0.9394366792,0.9470907814,0.9719321388,1.0,0.9874688365,0.9722974892,0.9403775888,0.9404184237,0.9024271738,0.8546839629,0.8672208361,0.831878488,0.8154858272,0.8157321266,0.8808939405,0.8955967589,0.9676150632,0.9938841611,1.0,0.993672815,0.980820023,0.9425339268,0.987438141,0.970296876,0.9879592977,0.9857697148,0.9769370427,0.9555580029,0.9493252608,0.9399222316,0.9364088144,0.796956272,0.772743018,0.7721757125,0.6898630616,0.7651166353,0.8201418284,0.8344279554,0.8344220618,0.8355362144,0.8792775949,0.9282722639,0.9485908751,0.9543683055,0.9790791769,0.9741714548,0.9371910441,0.9590860541,0.9693561321,0.9699945196,0.9100696324,0.9539225086,0.941861417,0.9373277951,0.9164053399,0.9061154897,0.862219198,0.8224283043,0.8189744331,0.820091712,0.8288784174,0.8200467151,0.9364894293,0.9214419407,0.8453560595,0.7778549793,0.8747429658,0.8881370078,0.9178704567,0.8973850166,0.8912340623,0.8606375107,0.8884180872,0.9341689049,0.8857743602,0.8979287988,0.9138948079,0.8978379525,0.8418432801,0.8339957996,0.8813965801,0.8670061824,0.9300401584,0.9048596252,0.9332080588,0.9376914515,0.9078040754,0.8561197832,0.8819610654,0.8419581951,0.8937655598,0.8905836258,0.897983463,0.9356603647,0.9133150274,0.8890991815,0.9050892707,0.9099772633,0.8988148693,0.8358264444,0.9034064596,0.9099022757,0.9102824346,0.9290114297,0.9473928865,0.9316706065,0.9347563368,0.9331376965,0.9701296673,0.9551800908,0.9608143841,0.9601494189,0.9140412398,0.8996937487,0.9328300594,0.9385767415,0.8825935783,0.8940736163,0.9108757877,0.8566385876,0.8322128252,0.8321125866,0.801651866,0.8505195256,0.8819752987,0.8469144498,0.772019458,0.7873954887,0.8121576398,0.7908457254,0.8882967207,0.8621153048,0.9384640793,0.8874163541,0.9319926816,0.9483648043,0.9475019774,0.878369978,0.8639393426,0.9003442768,0.8582119966,0.7515759352,0.7784612405,0.7568124763,0.5209503203,0.5859988357,null,null,null,null] ,
+        "B":[0.3972601729,0.5058083466,0.7237950444,0.7587073056,0.7997301317,0.8210037797,0.8960440233,0.8750961103,0.8729746183,0.8916893779,0.8563839386,0.8396260687,0.9157471016,0.8737733438,0.9100420484,0.9632103637,0.9247824799,0.9648134418,0.9191522028,0.9637605567,0.9484488667,0.946278612,0.8833631491,0.8907200406,0.9124932769,0.936006005,0.950346261,0.9446165025,0.9843166232,0.9766302152,0.9348147639,0.9535049093,0.9346887305,0.9298203293,0.9573182786,0.9750240928,0.9798863207,0.9911258387,1.0,0.9020584879,0.9033777751,0.9331983307,0.9238321055,0.9226239583,0.8355986064,0.7555741441,0.7419946244,0.8509674371,0.8421463789,0.8383058871,0.7849302712,0.9370560385,0.8941657605,0.9212408967,0.8560740854,0.8861669364,0.9011140574,0.8987787303,0.871196063,0.8277289746,0.8634447165,0.9130443974,0.9041402941,0.8763421493,0.8948251517,0.9431220944,0.9269451403,0.9497462416,0.8909279901,0.9175041373,0.8450493035,0.7750374141,0.8468320961,0.8701101168,0.9109547703,0.8520998361,0.9384927965,0.9393803447,0.9356467822,0.8956162125,0.9160787501,0.9038052957,0.9002154131,0.9390802103,0.994659666,0.9802690522,0.9579497615,0.9085656977,0.9368658662,0.9029163804,0.9446072467,0.9099707792,0.9181544561,0.9305531397,0.916402679,0.9187436481,0.8503913742,0.9421966766,0.9483040846,0.9034103303,0.9338009054,0.8992440152,0.9563605654,0.9701009024,0.926690358,0.9617746988,0.9204695656,0.976193956,0.9656166513,0.9261125336,0.9488769294,0.9423735042,0.9178940328,0.929293755,0.9171676632,0.9057327759,0.8870354112,0.8499459282,0.8727170224,0.9242474679,0.865358446,0.8895695052,0.8310419193,0.839163394,0.8666266508,0.8508768692,0.8626688869,0.9051335976,0.9452490447,0.9527756869,0.9011155018,0.9753308946,0.9232482807,0.9693406531,0.9673020343,0.9130843832,0.8165620461,0.843252933,0.8035546833,0.7644951567,0.7419422495,0.7232384546,0.8321085658,0.8777613369,0.9322610848,0.9764617817,0.9412889994,0.9788056416,0.97032062,0.9614991154,0.9164322349,0.8757845414,0.8401442569,0.7056790461,0.7735436438,0.9500662011,0.9424029107,0.9550798045,0.9752586806,1.0,0.9864111189,0.9689312606,0.9388937436,0.9255792489,0.9019501012,0.8493758431,0.8622406794,0.8338235609,0.8128656124,0.8557739143,0.880882923,0.8994652352,0.9691017171,0.9936687797,1.0,0.9878385763,0.9814759934,0.9411590464,0.986737437,0.9690222029,0.9860857159,0.9869406237,0.9715344677,0.9423952295,0.9435640536,0.9271430455,0.9255126504,0.7940172189,0.7209133625,0.7399458762,0.682646761,0.7701504054,0.8179203543,0.8487758804,0.8330751784,0.8375157844,0.8739457963,0.9221570251,0.9461955011,0.9574787872,0.984907889,0.9675908947,0.9330954426,0.9542779116,0.9656216351,0.9667849136,0.9067760909,0.9514522818,0.9444655063,0.9271292249,0.9261890883,0.9199999965,0.8744221811,0.8370788615,0.8934459377,0.8625557731,0.8241228654,0.7944975291,0.9175931583,0.8936673449,0.8086628284,0.7067790468,0.8058232401,0.8918559458,0.9176877942,0.9047689614,0.9074075061,0.8864135452,0.9029381632,0.9360356347,0.8999660798,0.9107087148,0.9199739541,0.9181944561,0.8526639888,0.8403977119,0.8800980585,0.8764154672,0.9385228624,0.915529827,0.9419322384,0.9447800816,0.9109577018,0.8587676656,0.8815182178,0.8440191692,0.8975248308,0.8911674957,0.9010701635,0.9378169826,0.9220627618,0.9081706816,0.9180642399,0.9109754365,0.9030066075,0.8486704622,0.9068581842,0.9094541233,0.9050997427,0.9266246274,0.946343909,0.9335570705,0.9301003982,0.9281057113,0.9693409679,0.9511682703,0.9538173628,0.9542166804,0.9027518517,0.8944076321,0.9266180753,0.9308379002,0.8770833674,0.8924837889,0.9019844409,0.859256754,0.8399236227,0.8514238789,0.8069572591,0.8571658236,0.8663315888,0.8584446903,0.766791773,0.7742815308,0.8011821848,0.7762936479,0.8751198933,0.8573666793,0.9238738234,0.8847526103,0.9231028792,0.9335463346,0.9447631606,0.8771678255,0.8626775503,0.8872763454,0.8484918603,0.7188214268,0.7427006302,0.7563971256,0.6862423791,0.685876934,0.6218562232,0.6775184053,null,null] },
+        'qmean_global':{"interaction_norm_score":-0.0186325933,"qmean6_z_score":-0.1965257564,"torsion_z_score":0.4661039799,"ss_agreement_z_score":-0.2173266965,"acc_agreement_norm_score":0.6567656766,"cbeta_norm_score":-0.0095903968,"packing_z_score":-0.6300319641,"qmean6_norm_score":0.7606837224,"qmean4_z_score":0.1450509128,"qmean4_norm_score":0.7686500964,"interaction_z_score":-0.5138792085,"ss_agreement_norm_score":0.587870472,"avg_local_score":0.8927046885,"torsion_norm_score":-0.362604736,"packing_norm_score":-0.3248133978,"cbeta_z_score":-0.6777681497,"acc_agreement_z_score":-0.5608172518,"avg_local_score_error":0.053}
+      }
+    
+ }  
+
+
+ $(document).ready( function()
+   {  
+      drawQMEAN('02')
+      drawQMEAN('01')
+      drawQMEAN('04')
+      drawQMEAN('03')
+   }) ;
+
+function drawQMEAN(id)
+{
+  var resCount = 0;
+  var local_scores = [];
+  for(chain in modelData[id].qmean_local)
+  {
+    var ls = {'chain':chain,'scores':[]};
+
+    for(var i=0; i<modelData[id].qmean_local[chain].length; i++)
+    {
+        ls['scores'].push([i, modelData[id].qmean_local[chain][i]]);
+        if(modelData[id].qmean_local[chain][i])
+          resCount++;
+    }
+    local_scores.push(ls);
+  }
+
+  drawQMEANLocal(local_scores, id);
+
+  drawQMEANGlobal(modelData[id]['qmean_global'], resCount, id, false);
+
+  $('a[rel=lq-'+id+'],a[href="#qn-chart-'+id+'"]')
+    .fancybox(
+      {
+        padding:30, 
+        'cyclic':true,
+        'hideOnContentClick':true,
+        beforeShow:function(a,b)
+        {
+          var id = $(this.content[0]).first().attr('id');
+          if(id.indexOf('lq-chart')>-1)
+            $('#'+id).closest('.fancybox-outer').after(
+               '<a style="color:#666;float:right;" onclick="svgToPNG(\''+id+'\',\'Local_quality_estimate.png\');">&#128247; Save as PNG</a>'
+               );
+          else if(id.indexOf('qn-chart')>-1)
+            $('#'+id).after(
+               '<a style="color:#666;float:right;" onclick="svgToPNG(\''+id+'\',\'Quality_comparison.png\');">&#128247; Save as PNG</a>'
+               );
+        }
+      });
+}
+
+
+
+
+  </script>
+
+  </body>
+</html>

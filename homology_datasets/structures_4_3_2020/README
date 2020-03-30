@@ -1,0 +1,51 @@
+More information
+
+Please see also this post with more details: https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19
+
+Reach out to covid-structure-predictions@deepmind.com for any technical inquiries.
+
+This work can be cited as:
+
+John Jumper, Kathryn Tunyasuvunakool, Pushmeet Kohli, Demis Hassabis, and the AlphaFold Team, “Computational predictions of protein structures associated with COVID-19”, DeepMind website, 5 March 2020, https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19
+
+
+General notes
+
+SARS-CoV-2 sequences were taken from the UniProt pre-release download (ftp://ftp.uniprot.org/pub/databases/uniprot/pre_release/, Feb 28th 2020).
+For proteins contained in the replicase polyprotein 1ab (R1AB_WCPV), residue indexing begins from 1 at the start of each processed chain.
+Regions at the N and C termini without confidently predicted structure have been omitted from the structure files.
+Structure B-factors contain integer values in the range 1 - 3. 1 represents the highest model confidence and 3 represents the lowest.
+
+
+Notes on individual predictions
+
+
+M_protein
+UniProt VME1_WCPV, includes residues 11 - 203.
+
+Protein_3a
+UniProt AP3A_WCPV, includes residues 38 - 233.
+Substantial uncertainty in residue ranges 163 - 197, 208 - 233.
+
+Nsp2
+UniProt R1AB_WCPV, corresponds to residues 181 - 818.
+Substantial uncertainty in residues 346 - 437 (prediction PDB indexing) so coordinates for these residues are not included in the structure file.
+
+PL-PRO C terminal domain
+UniProt R1AB_WCPV, corresponds to residues 2389 - 2745.
+Included as this region appeared not to be covered by SWISS-MODEL.
+
+Nsp4
+UniProt R1AB_WCPV, corresponds to residues 2764 - 3252.
+Uncertainty highest between domains.
+
+Nsp6
+UniProt R1AB_WCPV, corresponds to residues 3570 - 3847.
+Uncertainty about positions of residues 84 - 132 and 238 - 278 relative to rest of structure (prediction PDB indexing).
+
+
+License and disclaimer
+
+Copyright (2020) DeepMind Technologies Limited
+Structure predictions and metadata are released under a CC-BY 4.0 licence (https://creativecommons.org/licenses/by/4.0/). The information provided is theoretical modelling only and caution should be exercised in its use. It is intended only as a resource for the scientific community at large in furthering our understanding of SARS-CoV-2.
+
