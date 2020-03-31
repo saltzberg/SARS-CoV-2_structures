@@ -6,15 +6,14 @@ This repository (contains/will contain) experimental and predicted protein struc
 
 Leave suggestions for analyses you are interested in. 
 
-Current status: 3/30/2020
+Current status: 3/31/2020
 * Individual PDB chains loaded
 * Sequence coverage plots enabled
+* I-tasser and Feig Lab models collected
 
 Next Updates:
 * Addition of homology models
 * Chimera/pymol scripts
-
-Later Updates:
 * Homology model agreement
 
 
@@ -28,6 +27,8 @@ PDB structures for SARS-CoV-2 sequences are found in:
 PDB structures for SARS-CoV-1 homologues are found in: 
 `./proteins/protein_name/SARS-CoV-2_pdbs`
 
+Homology models are found in:
+`./proteins/protein_name/homology_models`
 
 ### Sequence Coverage
 Sequence coverage plots show the residues described by SARS-CoV-2 pdbs (bottom), SARS-CoV-1 pdbs (middle) and homology models (top, not implemented yet)
@@ -77,13 +78,14 @@ Homology model sets which are/will be incorporated into the database:
 * [SWISS-PROT](https://swissmodel.expasy.org/repository/species/2697049)
 * [FeigLab](https://github.com/feiglab/sars-cov-2-proteins)
 * [Korkin Lab](http://korkinlab.org/wuhan)
+* [I_Tasser](https://zhanglab.ccmb.med.umich.edu/C-I-TASSER/2019-nCov)
 * [AlphaFold](https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19)
 * [MODELLER](https://modbase.compbio.ucsf.edu/modweb/) - models currently building
 
 Other useful structures:
 * Tristan Croll's [ISOLDE refined PDB structures](https://drive.google.com/drive/folders/1S5qJtCnK00NrcbwwBNgImUMewhiBkyPa)
-
-Please let me know if you have other structure predicitons that you would like to share!
+* Thorn lab [refined PDB structures](https://github.com/thorn-lab/coronavirus_structural_task_force)
+Please let me know if you have other structure predictions or refinements that can be included in this database!
 
 ### License
 
