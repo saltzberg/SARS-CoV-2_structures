@@ -14,17 +14,24 @@ from Bio.PDB.PDBParser import PDBParser
 from matplotlib import pyplot as plt
 from utilities import *
 
+import warnings
+warnings.filterwarnings("ignore")
+
 # Directory setup
 topdir = "../"
-seq_file = topdir+"indexing/SARS_CoV_2.seq"
+seq_file = topdir+"data/indexing/SARS_CoV_2.seq"
 
 # First, get the all of the protein names
-protein_names = get_protein_names(topdir+"indexing/protein_names.txt")
+protein_names = get_protein_names(topdir+"data/indexing/protein_names.txt")
 
 # Second, find the sequences associated with each protein. 
 sd = parse_seq_file(seq_file)
 protein_dict = {}
 parser = PDBParser(PERMISSIVE=1)
+
+# Make sars_cov_1/2 dictionaries
+#pdbid_file = topdir+"data/indexing/sars_cov_2_pdbblast.dat" # used by default
+sars_cov_1_pdb_dictionary, sars_cov_2_pdb_dictionary = create_sarscov_pdb_dictionaries()
 
 # Loop over all proteins
 for s in range(len(sd.keys())):
@@ -44,18 +51,26 @@ for s in range(len(sd.keys())):
     for pdb in pdbs:
         pdb_file = topdir + "/pdbs/pdb"+pdb[0]+".ent"
         structure = parser.get_structure(pdb, pdb_file)
+        chain_id = pdb[1]
         model = structure[0]
-        sars2_resis.update([r.get_id()[1] for r in model["A"].get_residues()])
+        resis = [r.get_id()[1]+pdb[-1] for r in model[chain_id].get_residues()]
+        sars2_resis.update(resis)
 
     pdbs = sars_cov_1_pdb_dictionary[sname]
 
     sars1_resis = set()
 
     for pdb in pdbs:
+
         pdb_file = topdir + "/pdbs/pdb"+pdb[0]+".ent"
         structure = parser.get_structure(pdb, pdb_file)
+        chain_id = pdb[1]
         model = structure[0]
-        sars1_resis.update([r.get_id()[1] for r in model["A"].get_residues()])
+        resis = [r.get_id()[1]+pdb[-1] for r in model[chain_id].get_residues()]
+
+        sars1_resis.update(resis)
+
+
 
     # Plot coverage for SARS1 and SARS2
     # TODO - make this function universal.  Pass a single list of resis, y-value and name

@@ -7,5 +7,5 @@
 
 #2) Run blastp on the pdb database and save those >90% ID dat file (15s)
 
-./blastp -db ./pdbaa -query ../../data/indexing/SARS_CoV_2.seq -outfmt "6" | awk '$3>90.0{print $1, $2, $3, $4,"|", $7, $8, $9, $10}' > ../../data/indexing/sars_cov_2_pdbblast.dat
+./blastp -db ./pdbaa -query ../../data/indexing/SARS_CoV_2.seq -outfmt "6" | awk '$3>80.0{print $1, $2, $3, $4,"|", $7, $8, $9, $10}' > ../../data/indexing/sars_cov_2_pdbblast.dat
 

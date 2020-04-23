@@ -1,7 +1,7 @@
 HEADER    VIRAL PROTEIN                           25-FEB-20   6VYB              
 TITLE     SARS-COV-2 SPIKE ECTODOMAIN STRUCTURE (OPEN STATE)                    
 COMPND    MOL_ID: 1;                                                            
-COMPND   2 MOLECULE: SPIKE GLYCOPROTEIN;                                        
+COMPND   2 MOLECULE: SARS-COV-2 SPIKE GLYCOPROTEIN;                             
 COMPND   3 CHAIN: A, B, C;                                                      
 COMPND   4 FRAGMENT: ECTODOMAIN;                                                
 COMPND   5 ENGINEERED: YES                                                      
@@ -19,6 +19,7 @@ KEYWDS   3 INFECTIOUS DISEASE, SSGCID, VIRAL PROTEIN
 EXPDTA    ELECTRON MICROSCOPY                                                   
 AUTHOR    A.C.WALLS,Y.J.PARK,M.A.TORTORICI,A.WALL,SEATTLE STRUCTURAL GENOMICS   
 AUTHOR   2 CENTER FOR INFECTIOUS DISEASE (SSGCID),A.T.MCGUIRE,D.VEESLER         
+REVDAT   3   01-APR-20 6VYB    1       COMPND                                   
 REVDAT   2   25-MAR-20 6VYB    1       JRNL                                     
 REVDAT   1   11-MAR-20 6VYB    0                                                
 JRNL        AUTH   A.C.WALLS,Y.J.PARK,M.A.TORTORICI,A.WALL,A.T.MCGUIRE,         

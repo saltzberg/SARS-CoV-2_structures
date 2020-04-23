@@ -7,13 +7,14 @@ import gzip
 import shutil
 import glob
 import sys
+
 from utilities import *
 
 databases = ["itasser", "Feiglab", "alphafold", "korkinlab", "swissprot", "modeller"]
 
 # NCBI IDs for SARS-CoV-2 proteins
 
-homology_dir = "../homology_datasets/"
+homology_dir = "../data/homology_datasets/"
 model_dir = "../proteins/"
 temp_dir = "./temp/"
 
@@ -131,11 +132,23 @@ def organize_swissprot_models(homology_dir=homology_dir, model_dir=model_dir, pr
 #
 ################################
 
-def update_alphafold_models(homology_dir=homology_dir, model_dir=model_dir, prefix="SWISS-PROT"):
+def update_alphafold_models(homology_dir=homology_dir, model_dir=model_dir, prefix="alphafold"):
     print("Downloading AlphaFold models")
-    url = ""
+    url = "https://storage.googleapis.com/deepmind-com-v3-datasets/alphafold-covid19/structures_4_3_2020.zip"
+    response = requests.get(url, stream=True)
+    with open(temp_dir+"structures_4_3_2020.zip",'wb') as f:
+        for chunk in response.iter_content(chunk_size=1024): 
+             # writing one chunk at a time to pdf file 
+             if chunk: 
+                 f.write(chunk) 
 
-def organize_alphafold_models(homology_dir=homology_dir, model_dir=model_dir, prefix="SWISS-PROT"):
+    # Unzip the main zipfile
+    with zipfile.ZipFile(temp_dir+"master.zip", 'r') as zip_ref:
+        zip_ref.extractall(temp_dir)
+
+    if os.path.exists(homology_dir+prefix):
+        shutil.rmtree(homology_dir+prefix)
+def organize_alphafold_models(homology_dir=homology_dir, model_dir=model_dir, prefix="alphafold"):
     print("Organizing AlphaFold models")
     pass
 
@@ -148,10 +161,101 @@ def organize_alphafold_models(homology_dir=homology_dir, model_dir=model_dir, pr
 #
 ################################
 
+# TODO - numbering is not consistent.  All models start from residue 1. Need to incorporate offsets)
+
+korkin_lab_dictionary = {
+    "nsp1" : "wNsp1-2hsxA",
+    "nsp2" : "",
+    "nsp3" : [u"wNsp3 domain1-2griA",
+              u"wNsp3 domain2-2acfA",
+              u"wNsp3 domain3-2wctA",
+              u"wNsp3 domain4-2kafA",
+              u"wNsp3 domain5-3e9sA",
+              u"wNsp3 domain6-2k87A"],
+    "nsp4" : "wNsp4-3vc8A",
+    "nsp5" : "wNsp5-2gt7A",
+    "nsp6" : "",
+    "nsp7" : "wNsp7-1ysyA",
+    "nsp8" : "wNsp8-6nurA",
+    "nsp9" : "wNsp9-3ee7",
+    "nsp10" : "wNsp10-2g9tA",
+    "nsp11" : "",
+    "nsp12" : "wNsp12-6nurA",
+    "nsp13" : "wNsp13-6jytA",
+    "nsp14" : "wNsp14-5c8uB",
+    "nsp15" : "wNsp15-2h85A",
+    "nsp16" : "wNsp16-2xyqA",
+    "orf3a" : "ORF3a",
+    "E" : "wE-5x29A",
+    "M" : "",
+    "orf6" : "",
+    "orf7a" : "",
+    "orf7b" : "wORF7a_1yo4A",
+    "orf8" : "",
+    "N" : [u"wN-Cterminal domain-2jw8A", 
+           u"wN-Nterminal domain-1ssk_4ud1A"],
+    "orf10" : "",
+    "S" : "wS-5xlr_C-6acj_C"
+}
+
 def update_korkinlab_models(homology_dir=homology_dir, model_dir=model_dir, prefix="KorkinLab"):
     print("Downloading Korkin Lab models")
-    #url = "https://swissmodel.expasy.org/repository/species/2697049"
-    #response = requests.get(url, stream=True)
+    urlpref = "http://draco.cs.wpi.edu/wuhan/IndividualModels/"
+
+    seq_dict = parse_seq_file("../indexing/SARS_CoV_2.seq")
+
+    os.makedirs(temp_dir + prefix)
+    for pname in korkin_lab_dictionary.keys():
+
+        # Get the sequence and id for this homology set
+        prot_sequence = seq_dict[pname]
+        pid = korkin_lab_dictionary[pname]
+
+        # As long as we have a PID, go on
+        if pid != "":
+
+            # First, see if we have a list of objects
+            if isinstance(pid, list):
+                for pi in range(len(pid)):
+                    url = urlpref+pid[pi]+".pdb"
+                
+                    print(url.encode('utf-8'))
+                    response = requests.get(url.encode('utf-8'), stream=True)
+                    outpdb = temp_dir + prefix +"/"+ pname +"_dom"+str(pi+1)+".pdb"
+                    with open(outpdb,'wb') as f:
+                        for chunk in response.iter_content(chunk_size=1024): 
+                             # writing one chunk at a time to pdb file 
+                             if chunk: 
+                                 f.write(chunk)
+
+                    shutil.move(outpdb, outpdb+".temp")  
+                    # Now read this 
+                    renumber_and_save_pdb(outpdb+".temp", prot_sequence, outpdb)
+                    os.remove(outpdb+".temp")
+            else:
+                #url = "https://swissmodel.expasy.org/repository/species/2697049/"+pi+".pdb"
+                url = urlpref+pid+".pdb"
+                print(url)
+                response = requests.get(url, stream=True)
+
+                outpdb = temp_dir + prefix +"/"+ pname +".pdb"
+
+                with open(temp_dir + prefix +"/"+ pname + ".pdb",'wb') as f:
+                    for chunk in response.iter_content(chunk_size=1024): 
+                         # writing one chunk at a time to pdf file 
+                         if chunk: 
+                             f.write(chunk) 
+                shutil.move(outpdb, outpdb+".temp")  
+                # Now read this 
+                renumber_and_save_pdb(outpdb+".temp", prot_sequence, outpdb)
+                os.remove(outpdb+".temp")
+
+    if os.path.exists(homology_dir+prefix):
+        shutil.rmtree(homology_dir+prefix)
+
+    shutil.move(temp_dir+prefix, homology_dir+prefix)    
+
+
 
 def organize_korkinlab_models(homology_dir=homology_dir, model_dir=model_dir, prefix="KorkinLab"):
     print("Organizing Korkin Lab models")
@@ -238,6 +342,8 @@ def organize_feiglab_models(homology_dir=homology_dir, model_dir=model_dir, pref
 ###############
 ###############
 
+
+
 def itasser(mode):
     if mode is "both":
         update_ITasser_models()
@@ -293,9 +399,9 @@ def modeller(mode):
         update_modeller_models() 
 
 def run_all(mode):
+    korkinlab(mode)
     itasser(mode)
     swissprot(mode)
-    korkinlab(mode)
     feiglab(mode)
     alphafold(mode)
     modeller(mode)

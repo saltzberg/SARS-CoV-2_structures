@@ -1,13 +1,53 @@
 import Bio
 import Bio.PDB
+from Bio.PDB import *
 from Bio.PDB.PDBParser import PDBParser
+from Bio.Blast import NCBIWWW
 
 
+sequence_file = "../data/indexing/SARS_CoV_2.seq"
 # Manually annotated PDB structures for SARS1 and SARS2
 #
 # Found via pblast of proteins in the PDB
 #
 ### TWO ###
+
+def create_sarscov_pdb_dictionaries(infile="../data/indexing/sars_cov_2_pdbblast.dat", s1={}, s2={}):
+    f = open(infile,"r")
+
+    seq_dict = parse_seq_file(sequence_file)
+
+    for pn in get_protein_names("../data/indexing/protein_names.txt"):
+        s1[pn] = []
+        s2[pn] = []
+
+    for l in f.readlines():
+        fields = l.split(" ")
+        pname = fields[0].split("_")[-1]
+        pdbid = fields[1].split("_")[0]
+        pdbchain = fields[1].split("_")[1]
+        pct_id = float(fields[2])
+        seqstart = int(fields[5]) 
+        seqend = int(fields[6]) 
+        offset = seqstart - int(fields[7]) 
+
+        n_seq_res = len(seq_dict[pname])
+        #if float(seqstart-seqend)/n_seq_res > 0.5 or seqstart-seqend > 20:
+        #    continue            
+
+        entry = (pdbid, pdbchain, seqstart, seqend, offset)
+
+        # If pct_id > 98%, we assume this is a SARS-CoV-2 structure
+        if pct_id > 98.0:
+            s2[pname].append(entry)
+        else:
+            if pname != "S" and int(float(seqend-seqstart)/n_seq_res*100) > 10:
+                s1[pname].append(entry)
+
+
+    return s1, s2           
+
+
 sars_cov_2_pdb_dictionary = {
     "nsp1" : [],
     "nsp2" : [],
@@ -15,12 +55,12 @@ sars_cov_2_pdb_dictionary = {
     "nsp4" : [],
     "nsp5" : [('5r7y',"a")],
     "nsp6" : [],
-    "nsp7" : [],
-    "nsp8" : [],
+    "nsp7" : [('6m71', 'c'), ('7btf', 'c')],
+    "nsp8" : [('6m71', 'b'), ('7btf', 'b')],
     "nsp9" : [('6w4b', 'a')],
     "nsp10" : [('6w4h', 'a')],
     "nsp11" : [],
-    "nsp12" : [],
+    "nsp12" : [('6m71', 'a'), ('7btf', 'a')],
     "nsp13" : [],
     "nsp14" : [],
     "nsp15" : [('6vww', 'a')],
@@ -52,7 +92,7 @@ sars_cov_1_pdb_dictionary = {
     "nsp9" : [('1qz8', 'a'), ('1uw7', 'a'), ('3ee7', "a")],
     "nsp10" : [('5c8s', 'a'), ('2g9t', 'a'), ('5nfy', 'm'), ('3r24', 'b'), ('2fyg', 'a')],
     "nsp11" : [('3r23','b'), ('2g9t','a')],
-    "nsp12" : [('6nur', 'a')],
+    "nsp12" : [('6nur', 'a'), ('6nus','a')],
     "nsp13" : [('6jyt', 'a', 1)],
     "nsp14" : [('5c8s', 'b'),('5c8t', 'b'),  ('5nfy', "a")],
     "nsp15" : [('2h85', 'a'), ('2rhb', 'a'), ('2ozk', 'a')],
@@ -72,6 +112,88 @@ sars_cov_1_pdb_dictionary = {
     "Protein14" : []
 }
 
+def get_protein_names():
+    return sars_cov_2_pdb_dictionary.keys()
+
+def get_first_residue_in_pdb(pdb, sequence):
+    # Many homology models start from RESID=1, even if the first residues does not
+    # correspond to residue = 1 in the sequence.  Find out what this is
+    return 1
+
+def is_subseq(x, y):
+    it = iter(y)
+    return all(c in it for c in x)
+
+def get_sequence_from_pdb(pdb, nres="all"):
+    parser = PDBParser(PERMISSIVE=1)
+    struct = parser.get_structure("temp", pdb)
+    seq = []
+    resnums = []
+    print(pdb)
+    for r in struct.get_residues():
+        #print(pdb, r.full_id[-1][1])
+        resname = r.get_resname()
+        rid = r.full_id[-1][1]
+        seq.append(Bio.PDB.Polypeptide.three_to_one(resname))
+        resnums.append(rid)
+    first_res = min(resnums)
+    last_res = max(resnums)
+    fit_seq = ""
+
+    for i in range(first_res, nres):
+        if nres in resnums:
+            fit_seq += seq[resnums.index(i)]
+        else:
+            break
+
+    return fit_seq, first_res
+
+def get_pdb_offset(pdb, sequence, nres=10):
+
+    fit_seq, first_res = get_sequence_from_pdb(pdb, nres)
+
+    if is_subseq(fit_seq, sequence):
+        fits = []
+        for i in range(len(sequence)):
+            if sequence[i:i+len(fit_seq)] == fit_seq:
+                fits.append(i)
+        return fits
+
+    else:
+        raise("Exception: PDB sequence and target sequence do not match:", fit_seq)
+
+def renumber_and_save_pdb(pdb, sequence, outpdb, diff=None):
+    # Given a PDB file, return a 
+    if diff is None:
+        offsets = get_pdb_offset(pdb, sequence)
+        if len(offsets) == 1:
+            diff = offsets[0]
+        else:
+            print("Offset could be any of these:", offsets)
+            print("Check manually and add to dictionary")
+            exit()
+
+    parser = PDBParser(PERMISSIVE=1)
+    struct = parser.get_structure("temp", pdb)
+
+    # Weird hack.  Need to change ID first to something ridiculous
+    # then change it back. Otheriwse it yells at you that there are two
+    # residues of the same ID.
+    silly_large_integer = 89104
+    # First chage by diff + a silly large integer
+    for r in struct.get_residues():
+        r.id = (r.full_id[3][0], r.full_id[3][1]+silly_large_integer+diff, r.full_id[3][2])
+        new_tup = (r.full_id[0], r.full_id[1], r.full_id[2], r.id)
+        r.full_id = new_tup
+    # Then subtract silly large integer
+    for r in struct.get_residues():
+        r.id = (r.full_id[3][0], r.full_id[3][1]-silly_large_integer, r.full_id[3][2])
+        new_tup = (r.full_id[0], r.full_id[1], r.full_id[2], r.id)
+        r.full_id = new_tup
+    
+    io = PDBIO()
+    io.set_structure(struct)
+    io.save(outpdb)
 
 def plot_coverage_single_protein(ax, sname, slen, s1_ranges, s2_ranges, 
                                 label_offset=0):
